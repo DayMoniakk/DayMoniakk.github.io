@@ -11,17 +11,20 @@
             font-family: Anonymous Pro;
             src: url("fonts/Anonymous Pro.ttf")
         }
-        @font-face
+
+        @font-face 
         {
             font-family: Anonymous Pro Bold;
             src: url("fonts/Anonymous Pro B.ttf")
         }
-        @font-face 
+
+        @font-face
         {
             font-family: Anonymous Pro Italic;
             src: url("fonts/Anonymous Pro I.ttf")
         }
-        @font-face 
+
+        @font-face
         {
             font-family: Anonymous Pro Bold Italic;
             src: url("fonts/Anonymous Pro BI.ttf")
@@ -71,13 +74,12 @@
             text-align: center;
             background: #1f1e20;
             margin-top: 3em;
-            border-radius: 15px;
         }
         .TopBar 
         {
             text-align: center;
         }
-        .footer
+        .footer 
         {
             width: 100%;
             position: fixed;
@@ -88,7 +90,6 @@
         }
         .btnBig
         {
-            text-align: center;
             background: #295076;
             padding: 14px 28px;
             margin: 5px;
@@ -96,23 +97,40 @@
             text-decoration: none;
             border-radius: 25px;
         }
-        .centerBtn
+        .images 
         {
-            text-align:center;
-            padding: 25px;
+            text-align: center;
+            line-height: 30px;
+            margin: 75px;
+            border-radius: 15px;
         }
         h4
         {
-            font-size: 40px;
-            font-weight: normal;
+            font-size: 22px;
+            font-weight: bold;
         }
-        .textOverImage 
+        h1
         {
-            position: absolute;
-            top: 7%;
-            left: 50%;
-            transform: translate(-50%,50%);
+            color: #2b77c2;
+            text-decoration: underline;
         }
+        h3 
+        {
+            color:#2b77c2;
+            font-size: 17px;
+        }
+        hr {
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            border-color: #2b77c2;
+            height: 5px;
+            background-color: #2b77c2;
+            border-radius: 15px;
+        }
+
     </style>
 </head>
 <body>
@@ -122,18 +140,32 @@
             <a href="games.html" class="btn">GAMES</a>
             <a href="about.html" class="btn">ABOUT</a>
         </li>
+
+        <li class="images">
+            <h1>Go Chicken !</h1>
+            <img src="imgs/gochickenmenu.png" />
+            <img src="imgs/gochickenzombie.png" />
+            <img src="imgs/gochickenlevel.png" />
+            <img src="imgs/gochickenmodels.png" />
+            <hr />
+            <p>
+                <h4 style="display:inline">Game status : </h4>  <h3 style="display:inline; color:#d56900">in development state (version 0.3)</h3>
+            </p>
+            <p>
+                <h4 style="display:inline">Modeling sofware : </h4>  <h3 style="display:inline">MagicaVoxel 0.99.1</h3>
+            </p>
+            <p>
+                <h4 style="display:inline">Game engine : </h4>  <h3 style="display:inline">Unity 2019.1</h3>
+            </p>
+            <p>
+                <h4 style="display:inline">Release date : </h4>  <h3 style="display:inline">First half of 2020</h3>
+            </p>
+            <hr />
+            <p style="padding-top:10px">
+                <a class="btnBig" title="Download the game !">Download not available yet.</a>
+            </p>
+        </li>
     </ul>
-
-    <div class="center">
-        <img style="vertical-align:middle" src="imgs/logo.png" />
-        <h4 class="textOverImage">Welcome !</h4>
-    </div>
-
-    <p class="centerBtn">
-        <a href="https://www.youtube.com/channel/UC7KPd_xFKEPD5bhVng0c2Ng" target="_blank" class="btnBig" style="background-color:#980000">YouTube</a>
-        <a href="https://daymoniakk.itch.io/" target="_blank" class="btnBig" style="background-color:#ae5500">Itch.io</a>
-        <a href="https://twitter.com/DayMoniakk" target="_blank" class="btnBig" style="background-color:#006497">Twitter</a>
-    </p>
 
     <footer class="footer">DayMoniakk Games 2019.</footer>
 </body>

@@ -101,17 +101,33 @@
             text-align:center;
             padding: 25px;
         }
+        .picture 
+        {
+            width: 401px;
+            height: 407px;
+            padding: 20px;
+            padding-top: 0px;
+            vertical-align: middle;
+        }
         h4
         {
-            font-size: 40px;
+            font-size: 17px;
             font-weight: normal;
         }
-        .textOverImage 
+        h3
         {
-            position: absolute;
-            top: 7%;
-            left: 50%;
-            transform: translate(-50%,50%);
+            color: #980000;
+            font-size: 25px;
+        }
+        span 
+        {
+            color: #980000;
+            text-decoration: underline;
+        }
+        .centerBtn
+        {
+            text-align: center;
+            padding: 10px;
         }
     </style>
 </head>
@@ -124,16 +140,29 @@
         </li>
     </ul>
 
-    <div class="center">
-        <img style="vertical-align:middle" src="imgs/logo.png" />
-        <h4 class="textOverImage">Welcome !</h4>
-    </div>
-
-    <p class="centerBtn">
-        <a href="https://www.youtube.com/channel/UC7KPd_xFKEPD5bhVng0c2Ng" target="_blank" class="btnBig" style="background-color:#980000">YouTube</a>
-        <a href="https://daymoniakk.itch.io/" target="_blank" class="btnBig" style="background-color:#ae5500">Itch.io</a>
-        <a href="https://twitter.com/DayMoniakk" target="_blank" class="btnBig" style="background-color:#006497">Twitter</a>
-    </p>
+    <ul>
+        <li class="center">
+            <h3>Who am I ?</h3>
+            <img class="picture" src="imgs/daypic.png" />
+            <br />
+            <h4 style="display:inline">My name is <span>Guillaume</span>, <span>21 years old</span> and I live in <span>France</span>.</h4>
+            <br />
+            <br />
+            <h4 style="display:inline">I'm learning game development since <span>2017</span>.</h4>
+            <br />
+            <h4 style="display:inline">My hobbies are <span>programming</span><span style="font-size: 12px; text-decoration:none; color:#ffffff">(huh really ?)</span>, <span>video editing</span>, <span>music producing</span>, and.... <span>VIDEO GAMES</span> !</h4>
+            <br />
+            <br />
+            <br />
+            <h4 style="display:inline">You can find me here :</h4>
+            <p class="centerBtn">
+                <a href="https://www.youtube.com/channel/UC7KPd_xFKEPD5bhVng0c2Ng" target="_blank" class="btnBig" style="background-color:#980000">YouTube</a>
+                <a href="https://daymoniakk.itch.io/" target="_blank" class="btnBig" style="background-color:#ae5500">Itch.io</a>
+                <a href="https://twitter.com/DayMoniakk" target="_blank" class="btnBig" style="background-color:#006497">Twitter</a>
+            </p>
+            <h4 style="display:inline; font-size:13px">Don't hesitate to contact me on <span style="color:#ffffff">Twitter</span> if you need assistance with any of my games.</h4>
+        </li>
+    </ul>
 
     <footer class="footer">DayMoniakk Games 2019.</footer>
 </body>
