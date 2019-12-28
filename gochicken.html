@@ -128,7 +128,8 @@
             color:#2b77c2;
             font-size: 17px;
         }
-        hr {
+        hr 
+        {
             margin-left: 100px;
             margin-right: 100px;
             margin-top: 20px;
@@ -139,7 +140,28 @@
             background-color: #2b77c2;
             border-radius: 15px;
         }
+        .Specs 
+        {
+            columns: 2;
+            background: #2b77c2;
+            padding: 10px;
+            border-radius: 10px;
+        }
 
+        .Title
+        {
+            text-align: center;
+        }
+
+        .MinSpecs 
+        {
+            padding: 5px;
+        }
+
+        .RecommendedSpecs
+        {
+            padding: 5px;
+        }
     </style>
 </head>
 <body>
@@ -158,16 +180,16 @@
             <img src="imgs/gochickenmodels.png" />
             <hr />
             <p>
-                <h4 style="display:inline">Game status : </h4>  <h3 style="display:inline; color:#d56900">in development state (version 0.4)</h3>
+                <h4 style="display:inline">Game status : </h4>  <h3 style="display:inline; color:#d56900">in development state (version 0.3)</h3>
             </p>
             <p>
-                <h4 style="display:inline">Modeling sofware : </h4>  <h3 style="display:inline">MagicaVoxel / Blender</h3>
+                <h4 style="display:inline">Modeling sofware : </h4>  <h3 style="display:inline">MagicaVoxel 0.99.1</h3>
             </p>
             <p>
                 <h4 style="display:inline">Music software : </h4>  <h3 style="display:inline">FL Studio 20</h3>
             </p>
             <p>
-                <h4 style="display:inline">Game engine : </h4>  <h3 style="display:inline">Unity 2019</h3>
+                <h4 style="display:inline">Game engine : </h4>  <h3 style="display:inline">Unity 2019.1</h3>
             </p>
             <p>
                 <h4 style="display:inline">Release date : </h4>  <h3 style="display:inline">First half of 2020</h3>
@@ -176,6 +198,34 @@
             <p style="padding-top:10px">
                 <a class="btnBig" title="Download the game !">Download not available yet.</a>
             </p>
+            <hr />
+            <h1 class="Title">System specs :</h1>
+            <div class="Specs">
+                <div class="MinSpecs">
+                    <strong>Minimal :</strong>
+                    <br />
+                    <span>(720p low settings)</span>
+                    <ul>
+                        <li><u style="font-weight: bold">Operating System : </u>Windows 7 64-bit Service Pack 1</li>
+                        <li><u style="font-weight: bold">Processor : </u>Quad core CPU</li>
+                        <li><u style="font-weight: bold">Memory : </u>4 GB RAM</li>
+                        <li><u style="font-weight: bold">Graphics : </u>AMD HD 7450 1GB / NVIDIA GeForce 8600 GT 1GB (DX 10)</li>
+                        <li><u style="font-weight: bold">Storage : </u>500 MB available space</li>
+                    </ul>
+                </div>
+                <div class="RecommendedSpecs">
+                    <strong>Recommended :</strong>
+                    <br />
+                    <span>(1080p max settings)</span>
+                    <ul>
+                        <li><u style="font-weight: bold">Operating System : </u>Windows 10 64-bit</li>
+                        <li><u style="font-weight: bold">Processor : </u>Quad core CPU</li>
+                        <li><u style="font-weight: bold">Memory : </u>4 GB RAM</li>
+                        <li><u style="font-weight: bold">Graphics : </u>AMD Radeon RX 560 2GB / NVIDIA GeForce GT 1030 2GB (DX 10)</li>
+                        <li><u style="font-weight: bold">Storage : </u>500 MB available space</li>
+                    </ul>
+                </div>
+            </div>
         </li>
     </ul>
 
