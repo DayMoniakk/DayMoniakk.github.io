@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>DayMoniakk Games</title>
+    <link rel="icon" type="image/png" href="imgs/logo.png">
+
+    <style>
+        @font-face 
+        {
+            font-family: Anonymous Pro;
+            src: url("fonts/Anonymous Pro.ttf")
+        }
+
+        @font-face 
+        {
+            font-family: Anonymous Pro Bold;
+            src: url("fonts/Anonymous Pro B.ttf")
+        }
+
+        @font-face
+        {
+            font-family: Anonymous Pro Italic;
+            src: url("fonts/Anonymous Pro I.ttf")
+        }
+
+        @font-face
+        {
+            font-family: Anonymous Pro Bold Italic;
+            src: url("fonts/Anonymous Pro BI.ttf")
+        }
+
+        body
+        {
+            color: #e9edf2;
+            background: #141315;
+            font-family: 'Anonymous Pro';
+        }
+        ul
+        {
+            list-style: none;
+            padding: 0;
+            margin: 10px;
+        }
+        li
+        {
+            background: #1f1e20;
+            padding: 1.5em;
+            margin-bottom: 1em;
+        }
+        h3 
+        {
+            margin-top: 0;
+            font-size: 1.3em;
+            color: #fffbab;
+        }
+        img 
+        {
+            width: 100%;
+            max-width: 600px;
+        }
+        p:last-child 
+        {
+            margin-bottom: 0px;
+        }
+        .btn 
+        {
+            padding: 14px 28px;
+            margin: 5px;
+            color: #980000; 
+        }
+        .btn:hover
+        {
+            color: #bf0000;
+        }
+        .center 
+        {
+            text-align: center;
+            background: #1f1e20;
+            margin-top: 3em;
+        }
+        .TopBar 
+        {
+            text-align: center;
+        }
+        .footer 
+        {
+            width: 100%;
+            position: fixed;
+            bottom: 0px;
+            padding-bottom: 5px;
+            left: 0px;
+            text-align: center;
+        }
+        .btnDownload
+        {
+            background-color: #20a120;
+            padding: 14px 28px;
+            margin: 5px;
+            color: #e9edf2;
+            text-decoration: none;
+            border-radius: 25px;
+        }
+        .btnDownload:hover
+        {
+            background-color: #0e630e;
+            padding: 16px 30px;
+        }
+        .btnItch 
+        {
+            background-color: #ae5500;
+            padding: 14px 28px;
+            margin: 5px;
+            color: #e9edf2;
+            text-decoration: none;
+            border-radius: 25px;
+        }
+        .btnItch:hover
+        {
+            background-color:#8a4300;
+            padding: 16px 30px;
+        }
+        .images 
+        {
+            text-align: center;
+            line-height: 30px;
+            margin: 75px;
+            border-radius: 15px;
+        }
+        h4
+        {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        h1
+        {
+            color: #2b77c2;
+            text-decoration: underline;
+        }
+        h3 
+        {
+            color:#2b77c2;
+            font-size: 17px;
+        }
+        hr 
+        {
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            border-color: #2b77c2;
+            height: 5px;
+            background-color: #2b77c2;
+            border-radius: 15px;
+        }
+        .Specs 
+        {
+            columns: 1;
+            background: #2b77c2;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .Title
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="TopBar">
+            <a href="index.html" class="btn">HOME</a>
+            <a href="games.html" class="btn">GAMES</a>
+            <a href="about.html" class="btn">ABOUT</a>
+        </li>
+
+        <li class="images">
+            <iframe width="800" height="473" src="http://www.youtube.com/embed/WsVA2WHdX3k" frameborder="0" allowfullscreen></iframe>
+            <hr />
+            <p>
+                <h4 style="display:inline">Game status : </h4>  <h3 style="display:inline; color:#33cc33">Realeased (version 1.0)</h3>
+            </p>
+            <p>
+                <h4 style="display:inline">Modeling sofware : </h4>  <h3 style="display:inline">MagicaVoxel / Blender</h3>
+            </p>
+            <p>
+                <h4 style="display:inline">Game engine : </h4>  <h3 style="display:inline">Unity 2019.3</h3>
+            </p>
+            <hr />
+            <p style="padding:10px">
+                <a class="btnDownload" title="Download the game !" href="https://mega.nz/#!CBQykSbD!swr8wdYP6GM8tIVRhW8yhSHd5j4x5tQMSuzXU1Z7rcA" target="_blank">Direct Download (Android)</a>
+                <a class="btnItch" title="Download the game !" href="https://daymoniakk.itch.io/flappy-chicken" target="_blank">Itch.io Page</a>
+            </p>
+            <hr />
+            <h1 class="Title">System specs :</h1>
+            <div class="Specs">
+                <strong>Minimal System Requirements :</strong>
+                <br />
+                <ul>
+                    <li><span style="font-weight: bold">Operating System : </span><span style="color:#2b77c2;">Android 4.4 (API 19)+</span></li>
+                    <li><span style="font-weight: bold">Processor : </span><span style="color:#2b77c2;">ARMv7 with Neon Support (32-bit) or ARM64</span></li>
+                    <li><span style="font-weight: bold">Memory : </span><span style="color:#2b77c2;">1 GB+ RAM</span></li>
+                    <li><span style="font-weight: bold">Storage : </span><span style="color:#2b77c2;">50 MB available space</span></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+
+    <footer class="footer">DayMoniakk Games <script>document.write(new Date().getFullYear())</script>. </footer>
+</body>
+</html>
