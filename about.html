@@ -1,233 +1,82 @@
-﻿<!DOCTYPE html>
-
-<html>
-<head>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DayMoniakk Games</title>
-    <link rel="icon" type="image/png" href="imgs/logo.png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <style>
-        @font-face 
-        {
-            font-family: Anonymous Pro;
-            src: url("fonts/Anonymous Pro.ttf")
-        }
-        @font-face
-        {
-            font-family: Anonymous Pro Bold;
-            src: url("fonts/Anonymous Pro B.ttf")
-        }
-        @font-face 
-        {
-            font-family: Anonymous Pro Italic;
-            src: url("fonts/Anonymous Pro I.ttf")
-        }
-        @font-face 
-        {
-            font-family: Anonymous Pro Bold Italic;
-            src: url("fonts/Anonymous Pro BI.ttf")
-        }
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 
-        body
-        {
-            color: #e9edf2;
-            background: #141315;
-            font-family: 'Anonymous Pro';
-        }
-        ul
-        {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        li
-        {
-            background: #1f1e20;
-            padding: 1.5em;
-            margin-bottom: 1em;
-        }
-        h3 
-        {
-            margin-top: 0;
-            font-size: 1.3em;
-            color: #fffbab;
-        }
-        img 
-        {
-            width: 100%;
-            max-width: 600px;
-        }
-        p:last-child 
-        {
-            margin-bottom: 0px;
-        }
-        .btn 
-        {
-            padding: 14px 28px;
-            margin: 5px;
-            color: #980000; 
-        }
-        .btn:hover
-        {
-            color: #bf0000;
-        }
-        .center 
-        {
-            text-align: center;
-            background: #1f1e20;
-            margin-top: 3em;
-            border-radius: 15px;
-        }
-        .TopBar 
-        {
-            text-align: center;
-        }
-        .footer
-        {
-            width: 100%;
-            position: fixed;
-            bottom: 0px;
-            padding-bottom: 5px;
-            left: 0px;
-            text-align: center;
-        }
-        .btnBig
-        {
-            text-align: center;
-            background: #295076;
-            padding: 14px 28px;
-            margin: 5px;
-            color: #e9edf2;
-            text-decoration: none;
-            border-radius: 25px;
-        }
-        .btnBigYoutube
-        {
-            text-align: center;
-            background-color:#980000;
-            padding: 14px 28px;
-            margin: 5px;
-            color: #e9edf2;
-            text-decoration: none;
-            border-radius: 25px;
-        }
-        .btnBigItchio
-        {
-            text-align: center;
-            background-color:#ae5500;
-            padding: 14px 28px;
-            margin: 5px;
-            color: #e9edf2;
-            text-decoration: none;
-            border-radius: 25px;
-        }
-        .btnBigTwitter
-        {
-            text-align: center;
-            background-color:#006497;
-            padding: 14px 28px;
-            margin: 5px;
-            color: #e9edf2;
-            text-decoration: none;
-            border-radius: 25px;
-        }
-        .btnBigYoutube:hover
-        {
-            text-align: center;
-            background-color:#750000;
-            padding: 16px 30px;
-            margin: 5px;
-            color: #e9edf2;
-            text-decoration: none;
-            border-radius: 25px;
-        }
-        .btnBigItchio:hover
-        {
-            text-align: center;
-            background-color:#8a4300;
-            padding: 16px 30px;
-            margin: 5px;
-            color: #e9edf2;
-            text-decoration: none;
-            border-radius: 25px;
-        }
-        .btnBigTwitter:hover
-        {
-            text-align: center;
-            background-color: #005078;
-            padding: 16px 30px;
-            margin: 5px;
-            color: #e9edf2;
-            text-decoration: none;
-            border-radius: 25px;
-        }
-        .centerBtn
-        {
-            text-align:center;
-            padding: 25px;
-        }
-        .picture 
-        {
-            width: 401px;
-            height: 407px;
-            padding: 20px;
-            padding-top: 0px;
-            vertical-align: middle;
-        }
-        h4
-        {
-            font-size: 17px;
-            font-weight: normal;
-        }
-        h3
-        {
-            color: #980000;
-            font-size: 25px;
-        }
-        span 
-        {
-            color: #980000;
-            text-decoration: underline;
-        }
-        .centerBtn
-        {
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
-</head>
-<body>
-    <ul>
-        <li class="TopBar">
-            <a href="index.html" class="btn">HOME</a>
-            <a href="games.html" class="btn">GAMES</a>
-            <a href="about.html" class="btn">ABOUT</a>
-        </li>
-    </ul>
+        <style>
+            .bd-placeholder-img 
+            {
+              font-size: 1.125rem;
+              text-anchor: middle;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+            }
+      
+            @media (min-width: 768px) 
+            {
+              .bd-placeholder-img-lg 
+              {
+                font-size: 3.5rem;
+              }
+            }
+          </style>
+          <link href="styles\about.css" rel="stylesheet">
+    </head>  
+    <body class="text-center">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-    <ul>
-        <li class="center">
-            <h3>Who am I ?</h3>
-            <img class="picture" src="imgs/daypic.png" />
-            <br />
-            <h4 style="display:inline">My name is <span>Guillaume</span>, <span><script>document.write(new Date().getFullYear() - 1998)</script> years old</span> and I live in <span>France</span>.</h4>
-            <br />
-            <br />
-            <h4 style="display:inline">I'm learning game development since <span>2017</span>.</h4>
-            <br />
-            <h4 style="display:inline">My hobbies are <span>programming</span><span style="font-size: 12px; text-decoration:none; color:#ffffff">(huh really ?)</span>, <span>video editing</span>, <span>music producing</span>, and.... <span>VIDEO GAMES</span> !</h4>
-            <br />
-            <br />
-            <br />
-            <h4 style="display:inline">You can find me here :</h4>
-            <p class="centerBtn">
-                <a href="https://www.youtube.com/channel/UC7KPd_xFKEPD5bhVng0c2Ng" target="_blank" class="btnBigYoutube">YouTube</a>
-                <a href="https://daymoniakk.itch.io/" target="_blank" class="btnBigItchio">Itch.io</a>
-                <a href="https://twitter.com/DayMoniakk" target="_blank" class="btnBigTwitter">Twitter</a>
-            </p>
-            <h4 style="display:inline; font-size:13px">Don't hesitate to contact me on <span style="color:#ffffff">Twitter</span> if you need assistance with any of my games.</h4>
-        </li>
-    </ul>
 
-    <footer class="footer">DayMoniakk Games <script>document.write(new Date().getFullYear())</script>. </footer>
-</body>
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <header class="masthead mb-auto">
+              <div class="inner">
+                <nav class="nav nav-masthead justify-content-center">
+                  <a class="nav-link" href="index.html">Home</a>
+                  <a class="nav-link" href="games.html">Games</a>
+                  <a class="nav-link active" href="about.html">About</a>
+                </nav>
+              </div>
+            </header>
+          
+            <main role="main" class="inner cover">
+              <h2 class="title">Who am I ?</h2>
+              <br>
+              <img src="imgs/daypic.png" class="avatarPic">
+              <br>
+              <br>
+              <div class="descriptionBox">
+                <h4 class="description">My name is <span>Guillaume</span>, <span><script>document.write(new Date().getFullYear() - 1998)</script> years old</span> and I live in <span>France</span>.</h4>
+                <br>
+                <br>
+                <h4 class="description">I'm learning game development since <span>2017</span>.</h4>
+                <br>
+                <h4 class="description">My hobbies are <span>programming</span><span style="font-size: 12px; text-decoration:none; color:#ffffff">(huh really ?)</span>, <span>video editing</span>, <span>music producing</span>, and.... <span>VIDEO GAMES</span> !</h4>
+                </div>
+
+              <p class="lead" style="padding-top: 12px;">
+                <div class="socialBtn" style="background-color: rgba(49, 49, 49, 0.295); padding-top: 10px; padding-bottom: 10px; border-radius: 15px;">
+                  <a class="fab fa-youtube" href="https://www.youtube.com/channel/UCoUO292I6BsSL3yZh8n1sZw" target="blank" style="color: rgb(177, 0, 0)"></a>
+                  <a class="fab fa-itch-io" href="https://daymoniakk.itch.io/" target="blank" style="color: rgb(202, 64, 0);"></a>    
+                  <a class="fab fa-twitter" href="https://twitter.com/ExigenceMusic" target="blank" style="color: rgb(0, 112, 177);"></a>             
+                </div>
+              </p>
+            </main>
+          
+            <footer class="mastfoot mt-auto">
+              <div class="inner">
+                <p>DayMoniakk <script>document.write(new Date().getFullYear())</script>.</p>
+              </div>
+            </footer>
+          </div>
+
+    </body>
 </html>

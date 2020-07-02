@@ -1,168 +1,100 @@
-﻿<!DOCTYPE html>
-
-<html>
-<head>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DayMoniakk Games</title>
-    <link rel="icon" type="image/png" href="imgs/logo.png">
 
     <style>
-        @font-face 
-        {
-            font-family: Anonymous Pro;
-            src: url("fonts/Anonymous Pro.ttf")
-        }
+      .bd-placeholder-img
+       {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
-        @font-face
-        {
-            font-family: Anonymous Pro Bold;
-            src: url("fonts/Anonymous Pro B.ttf")
+      @media (min-width: 768px) 
+      {
+        .bd-placeholder-img-lg
+         {
+          font-size: 3.5rem;
         }
-
-        @font-face
-        {
-            font-family: Anonymous Pro Italic;
-            src: url("fonts/Anonymous Pro I.ttf")
-        }
-
-        @font-face 
-        {
-            font-family: Anonymous Pro Bold Italic;
-            src: url("fonts/Anonymous Pro BI.ttf")
-        }
-
-        body
-        {
-            color: #e9edf2;
-            background: #141315;
-            font-family: 'Anonymous Pro';
-        }
-        ul
-        {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        li
-        {
-            background: #1f1e20;
-            padding: 1.5em;
-            margin-bottom: 1em;
-        }
-        h3 
-        {
-            margin-top: 0;
-            font-size: 1.3em;
-            color: #fffbab;
-        }
-        img 
-        {
-            width: 100%;
-            max-width: 600px;
-        }
-        p:last-child 
-        {
-            margin-bottom: 0px;
-        }
-        .btn 
-        {
-            padding: 14px 28px;
-            margin: 5px;
-            color: #980000; 
-        }
-        .btn:hover
-        {
-            color: #bf0000;
-        }
-        .center 
-        {
-            text-align: center;
-            background: #1f1e20;
-            margin-top: 3em;
-        }
-        .TopBar 
-        {
-            text-align: center;
-        }
-        .footer 
-        {
-            width: 100%;
-            position: fixed;
-            bottom: 0px;
-            padding-bottom: 5px;
-            left: 0px;
-            text-align: center;
-            margin-bottom: 0;
-        }
-        .btnBig
-        {
-            background: #295076;
-            padding: 14px 28px;
-            margin: 5px;
-            color: #e9edf2;
-            text-decoration: none;
-            border-radius: 25px;
-        }
-        .btnBig:hover
-        {
-            background: #234261;
-            padding: 16px 30px;
-        }
-        .images 
-        {
-            text-align: center;
-            line-height: 30px;
-            margin: 75px;
-            border-radius: 15px;
-        }
-        h4
-        {
-            font-size: 17px;
-            font-weight: normal;
-        }
-        h1
-        {
-            color: #2b77c2;
-            text-decoration: underline;
-        }
-
+      }
     </style>
-</head>
-<body>
-    <ul>
-        <li class="TopBar">
-            <a href="index.html" class="btn">HOME</a>
-            <a href="games.html" class="btn">GAMES</a>
-            <a href="about.html" class="btn">ABOUT</a>
-        </li>
 
-        <li class="images">
-            <h1>Go Chicken !</h1>
-            <img src="imgs/gochickenmenu.png" />
-            <h4>Go Chicken is a little simple game based on simple mechanics, you have only 4 buttons and your skill !</h4>
-            <p>
-                <a href="gochicken.html" class="btnBig" title="Learn more about the game !">More details</a>
-            </p>
-        </li>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-        <li class="images">
-            <h1>Flappy Chicken</h1>
-            <img src="imgs/flappychicken.png" />
-            <h4>Flappy Chicken is a little game based on the mechanics of Flappy Bird and the graphics of Go Chicken!</h4>
-            <p>
-                <a href="flappychicken.html" class="btnBig" title="Learn more about the game !">More details</a>
-            </p>
-        </li>
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 
-        <li class="images">
-            <h1>Alone with a liar</h1>
-            <img src="imgs/liargame.png" />
-            <h4>This game was made in one week for a community game jam !</h4>
-            <p>
-                <a href="https://daymoniakk.itch.io/alone-with-a-liar" target="_blank" class="btnBig" title="You can download the game here !">More details & Download</a>
-            </p>
-        </li>
-    </ul>
 
-    <footer class="footer">DayMoniakk Games <script>document.write(new Date().getFullYear())</script>. </footer>
-</body>
+        <link href="styles\games.css" rel="stylesheet">
+    </head>  
+    <body class="text-center">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <header class="masthead mb-auto">
+              <div class="inner">
+                <nav class="nav nav-masthead justify-content-center">
+                  <a class="nav-link" href="index.html">Home</a>
+                  <a class="nav-link active" href="games.html">Games</a>
+                  <a class="nav-link" href="about.html">About</a>
+                </nav>
+              </div>
+            </header>
+
+            <div class="album py-5 background-color">
+              <div class="container">
+          
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                      <h2>Go Chicken!</h2>
+                      <img src="imgs/gochickenmenu.png" width="100%" height="225" preserveAspectRatio="xMidYMid slice">
+                      <div class="card-body">
+                        <p class="card-text">Go Chicken is a little simple game based on simple mechanics, you have only 4 buttons and your skill !</p>
+                        <a href="gochicken.html" class="btn btn-lg btn-secondary" style="background-color: rgb(0, 112, 177);">more details</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                      <h2>Flappy Chicken</h2>
+                      <img src="imgs/flappychicken.png" width="100%" height="225" preserveAspectRatio="xMidYMid slice">
+                      <div class="card-body">
+                        <p class="card-text">Flappy Chicken is a little game based on the mechanics of Flappy Bird and the graphics of Go Chicken!</p>
+                        <a href="flappychicken.html" class="btn btn-lg btn-secondary" style="background-color: rgb(0, 112, 177);">more details</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                      <h2>Alone with a liar</h2>
+                      <img src="imgs/liargame.png" width="100%" height="225" preserveAspectRatio="xMidYMid slice">
+                      <div class="card-body">
+                        <p class="card-text">This game was made in one week for a community game jam !</p>
+                        <a href="https://daymoniakk.itch.io/alone-with-a-liar" class="btn btn-lg btn-secondary" target="blank" style="background-color: rgb(0, 112, 177);">more details</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <footer class="mastfoot mt-auto">
+              <div class="inner">
+                <p>DayMoniakk <script>document.write(new Date().getFullYear())</script>.</p>
+              </div>
+            </footer>
+          </div>
+
+    </body>
 </html>

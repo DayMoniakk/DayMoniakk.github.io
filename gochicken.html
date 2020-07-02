@@ -1,238 +1,146 @@
-﻿<!DOCTYPE html>
-
-<html>
-<head>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DayMoniakk Games</title>
-    <link rel="icon" type="image/png" href="imgs/logo.png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <style>
-        @font-face 
-        {
-            font-family: Anonymous Pro;
-            src: url("fonts/Anonymous Pro.ttf")
-        }
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 
-        @font-face 
-        {
-            font-family: Anonymous Pro Bold;
-            src: url("fonts/Anonymous Pro B.ttf")
-        }
+        <style>
+            .bd-placeholder-img 
+            {
+              font-size: 1.125rem;
+              text-anchor: middle;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+            }
+      
+            @media (min-width: 768px) 
+            {
+              .bd-placeholder-img-lg 
+              {
+                font-size: 3.5rem;
+              }
+            }
+          </style>
+          <link href="styles/gochicken.css" rel="stylesheet">
+    </head>  
+    <body class="text-center">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-        @font-face
-        {
-            font-family: Anonymous Pro Italic;
-            src: url("fonts/Anonymous Pro I.ttf")
-        }
 
-        @font-face
-        {
-            font-family: Anonymous Pro Bold Italic;
-            src: url("fonts/Anonymous Pro BI.ttf")
-        }
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <header class="masthead mb-auto">
+              <div class="inner">
+                <nav class="nav nav-masthead justify-content-center">
+                  <a class="nav-link" href="index.html">Home</a>
+                  <a class="nav-link" href="games.html">Games</a>
+                  <a class="nav-link" href="about.html">About</a>
+                </nav>
+              </div>
+            </header>
+          
+            <main role="main" class="inner cover">
+              <p class="lead">
 
-        body
-        {
-            color: #e9edf2;
-            background: #141315;
-            font-family: 'Anonymous Pro';
-        }
-        ul
-        {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        li
-        {
-            background: #1f1e20;
-            padding: 1.5em;
-            margin-bottom: 1em;
-        }
-        h3 
-        {
-            margin-top: 0;
-            font-size: 1.3em;
-            color: #fffbab;
-        }
-        img 
-        {
-            width: 100%;
-            max-width: 600px;
-        }
-        p:last-child 
-        {
-            margin-bottom: 0px;
-        }
-        .btn 
-        {
-            padding: 14px 28px;
-            margin: 5px;
-            color: #980000; 
-        }
-        .btn:hover
-        {
-            color: #bf0000;
-        }
-        .center 
-        {
-            text-align: center;
-            background: #1f1e20;
-            margin-top: 3em;
-        }
-        .TopBar 
-        {
-            text-align: center;
-        }
-        .footer 
-        {
-            width: 100%;
-            position: fixed;
-            bottom: 0px;
-            padding-bottom: 5px;
-            left: 0px;
-            text-align: center;
-        }
-        .btnBig
-        {
-            background: #295076;
-            padding: 14px 28px;
-            margin: 5px;
-            color: #e9edf2;
-            text-decoration: none;
-            border-radius: 25px;
-            text-align: center;
-        }
-        .btnBig:hover
-        {
-            background: #234261;
-            padding: 16px 30px;
-        }
-        .images 
-        {
-            text-align: center;
-            line-height: 30px;
-            margin: 75px;
-            border-radius: 15px;
-        }
-        h4
-        {
-            font-size: 22px;
-            font-weight: bold;
-        }
-        h1
-        {
-            color: #2b77c2;
-            text-decoration: underline;
-        }
-        h3 
-        {
-            color:#2b77c2;
-            font-size: 17px;
-        }
-        hr 
-        {
-            margin-left: 100px;
-            margin-right: 100px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            text-align: center;
-            border-color: #2b77c2;
-            height: 5px;
-            background-color: #2b77c2;
-            border-radius: 15px;
-        }
-        .Specs 
-        {
-            columns: 2;
-            background: #2b77c2;
-            padding: 10px;
-            border-radius: 10px;
-        }
+                <div class="title">
+                  <h2>Go Chicken!</h2>    
+                </div>
+                <br>
+                  <div class="gridFlex">
+                    <img src="imgs/gochickenmenu.png">
+                    <img src="imgs/gochickenzombie.png">
+                  </div>
+                  <div class="gridFlex">
+                    <img src="imgs/gochickenlevel.png">
+                    <img src="imgs/gochickenwinterlevel.png">
+                  </div>
+                <br>
+                <hr>
 
-        .Title
-        {
-            text-align: center;
-        }
-
-        .MinSpecs 
-        {
-            padding: 5px;
-        }
-
-        .RecommendedSpecs
-        {
-            padding: 5px;
-        }
-    </style>
-</head>
-<body>
-    <ul>
-        <li class="TopBar">
-            <a href="index.html" class="btn">HOME</a>
-            <a href="games.html" class="btn">GAMES</a>
-            <a href="about.html" class="btn">ABOUT</a>
-        </li>
-
-        <li class="images">
-            <h1>Go Chicken !</h1>
-            <img src="imgs/gochickenmenu.png" />
-            <img src="imgs/gochickenzombie.png" />
-            <img src="imgs/gochickenlevel.png" />
-            <img src="imgs/gochickenwinterlevel.png" />
-            <hr />
-            <p>
-                <h4 style="display:inline">Game status : </h4>  <h3 style="display:inline; color:#33cc33">Released (version 1.0)</h3>
-            </p>
-            <p>
-                <h4 style="display:inline">Modeling sofware : </h4>  <h3 style="display:inline">MagicaVoxel / Blender</h3>
-            </p>
-            <p>
-                <h4 style="display:inline">Music software : </h4>  <h3 style="display:inline">FL Studio 20</h3>
-            </p>
-            <p>
-                <h4 style="display:inline">Game engine : </h4>  <h3 style="display:inline">Unity 2020.3</h3>
-            </p>
-            <p>
-                <h4 style="display:inline">Release date : </h4>  <h3 style="display:inline">1st June 2020</h3>
-            </p>
-            <hr />
-            <p style="padding:10px">
-                <a class="btnBig" href="https://mega.nz/file/WJwkEAgC#elCJ7276Llv5mQ5v9kP6nEuOnoemgfuP32nnNGlfI8g" target="_blank"> Download for Windows.</a>
-                <a class="btnBig" style="background: #c44800" href="https://mega.nz/file/rRogDAZb#qjMOZrPcay8MZZPSCi9Rq74yIuDiwGIetnn13UMYBt4" target="_blank"> Download for Linux.</a>
-                <a class="btnBig" style="background: #5300ef" href="https://mega.nz/file/aUxyWaqY#m2gMc3cUF-auLNj2f6lqrzEb34egIjgXO-CJSlCGdls" target="_blank"> Download for Mac.</a>
-                <h5>(Some antivirus may stop you from running the game because the files are new. In this case you need to add a exception for the .exe and you can also report the file as false positive)</h5>
-            </p>
-            <hr />
-            <h1 class="Title">System specs for Windows :</h1>
-            <div class="Specs">
-                <div class="MinSpecs">
-                    <strong>Minimal :</strong>
+                <p>
+                    <h4 style="display:inline">Game status : </h4>  <h3 style="display:inline; color:#33cc33">Released (version 1.0)</h3>
+                </p>
+                <p>
+                  <h4 style="display:inline">Modeling sofware : </h4>  <h3 style="display:inline">MagicaVoxel / Blender</h3>
+                </p>
+                <p>
+                  <h4 style="display:inline">Music software : </h4>  <h3 style="display:inline">FL Studio 20</h3>
+               </p>
+               <p>
+                  <h4 style="display:inline">Game engine : </h4>  <h3 style="display:inline">Unity 2020.3</h3>
+                </p>
+                <p>
+                  <h4 style="display:inline">Release date : </h4>  <h3 style="display:inline">1st June 2020</h3>
+                </p>
+              </p>
+              <br>
+              <hr>
+              <p style="padding: 10px">
+                <a href="https://mega.nz/file/WJwkEAgC#elCJ7276Llv5mQ5v9kP6nEuOnoemgfuP32nnNGlfI8g" class="btn btn-lg btn-secondary" target="blank" style="background-color: rgb(0, 97, 153);">Download (Windows)</a>
+                <a href="https://mega.nz/file/rRogDAZb#qjMOZrPcay8MZZPSCi9Rq74yIuDiwGIetnn13UMYBt4" class="btn btn-lg btn-secondary" target="blank" style="background-color: rgb(165, 88, 16);">Download (Linux)</a>
+                <a href="https://mega.nz/file/aUxyWaqY#m2gMc3cUF-auLNj2f6lqrzEb34egIjgXO-CJSlCGdls" class="btn btn-lg btn-secondary" target="blank" style="background-color: rgb(108, 19, 150);">Download (Mac)</a>
+              </p>
+              <hr>
+              <br>
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm" style="background-color: rgba(85, 85, 85, 0.295);">
+                    <hr class="little_hr">
+                    <strong style="color: #caae11;">Minimal :</strong>
                     <br />
                     <span>(720p low settings)</span>
-                    <ul>
-                        <li><span style="font-weight: bold">Operating System : </span><span style="color:#2b77c2;">Windows 7 32-bit Service Pack 1</span></li>
-                        <li><span style="font-weight: bold">Processor : </span><span style="color:#2b77c2;">Quad core CPU</span></li>
-                        <li><span style="font-weight: bold">Memory : </span><span style="color:#2b77c2;">4 GB RAM</span></li>
-                        <li><span style="font-weight: bold">Graphics : </span><span style="color:#2b77c2;">AMD Radeon HD 7450 1GB / NVIDIA GeForce 8600 GT 1GB (DX 10)</span></li>
-                        <li><span style="font-weight: bold">Storage : </span><span style="color:#2b77c2;">150 MB available space</span></li>
-                    </ul>
-                </div>
-                <div class="RecommendedSpecs">
-                    <strong>Recommended :</strong>
+                    <hr class="little_hr">
+                    <p style="margin: 10px; text-align: left;">
+                      <span style="font-weight: bold">Operating System : </span><span style="color:#2b77c2;">Windows 7 32-bit Service Pack 1</span>
+                      <br>
+                      <span style="font-weight: bold">Processor : </span><span style="color:#2b77c2;">Quad core CPU</span>
+                      <br>
+                      <span style="font-weight: bold">Memory : </span><span style="color:#2b77c2;">4 GB RAM</span>
+                      <br>
+                      <span style="font-weight: bold">Graphics : </span><span style="color:#2b77c2;">AMD Radeon HD 7450 1GB / NVIDIA GeForce 8600 GT 1GB (DX 10)</span>
+                      <br>
+                      <span style="font-weight: bold">Storage : </span><span style="color:#2b77c2;">150 MB available space</span>
+                    </p>
+                  </div>
+
+                  <div class="col-sm" style="background-color: rgba(85, 85, 85, 0.295);">
+                    <hr class="little_hr">
+                    <strong style="color: #2c7709;">Recommended :</strong>
                     <br />
                     <span>(1080p max settings)</span>
-                    <ul>
-                        <li><span style="font-weight: bold">Operating System : </span><span style="color:#2b77c2;">Windows 10 64-bit</span></li>
-                        <li><span style="font-weight: bold">Processor : </span><span style="color:#2b77c2;">Quad core CPU</span></li>
-                        <li><span style="font-weight: bold">Memory : </span><span style="color:#2b77c2;">4 GB RAM</span></li>
-                        <li><span style="font-weight: bold">Graphics : </span><span style="color:#2b77c2;">AMD Radeon RX 550 2GB / NVIDIA GeForce GT 1030 2GB (DX 11)</span></li>
-                        <li><span style="font-weight: bold">Storage : </span><span style="color:#2b77c2;">150 MB available space</span></li>
-                    </ul>
+                    <hr class="little_hr">
+                    <p style="margin: 10px; text-align: left;">
+                      <span style="font-weight: bold">Operating System : </span><span style="color:#2b77c2;">Windows 10 64-bit</span>
+                      <br>
+                      <span style="font-weight: bold">Processor : </span><span style="color:#2b77c2;">Quad core CPU</span>
+                      <br>
+                      <span style="font-weight: bold">Memory : </span><span style="color:#2b77c2;">4 GB RAM</span>
+                      <br>
+                      <span style="font-weight: bold">Graphics : </span><span style="color:#2b77c2;">AMD Radeon RX 550 2GB / NVIDIA GeForce GT 1030 2GB (DX 11)</span>
+                      <br>
+                      <span style="font-weight: bold">Storage : </span><span style="color:#2b77c2;">150 MB available space</span>
+                    </p>
+                  </div>
                 </div>
-            </div>
-        </li>
-    </ul>
+              </div>
+              <br>
+              <br>
+            </main>
+          
+            <footer class="mastfoot mt-auto">
+              <div class="inner">
+                <p>DayMoniakk <script>document.write(new Date().getFullYear())</script>.</p>
+              </div>
+            </footer>
+          </div>
 
-    <footer class="footer">DayMoniakk Games <script>document.write(new Date().getFullYear())</script>. </footer>
-</body>
+    </body>
 </html>
