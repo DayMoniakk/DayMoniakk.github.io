@@ -1,0 +1,201 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover 
+{
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus 
+{
+  color: rgb(216, 216, 216);
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: 2px solid rgb(168, 168, 168);
+  margin: 5px;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body 
+{
+  height: 125%;
+  background-color: rgb(27, 27, 27);
+}
+
+body 
+{
+  display: -ms-flexbox;
+  display: flex;
+  color: rgb(168, 0, 0);
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  font-family: 'Anonymous Pro', monospace;
+}
+
+.cover-container 
+{
+  max-width: 68em;
+}
+
+.gridFlex
+{
+  display: flex;
+  justify-content: center;
+  width: 225px;
+  margin: 0 auto;
+}
+
+.gridFlex img
+{
+  margin: 5px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+img
+{
+  width: 100%;
+  max-width: 600px;
+}
+
+h2
+{
+  color: #2b77c2;
+  font-size: 50px;
+}
+
+h3
+{
+  color: #2b77c2;
+  font-size: 17px;
+}
+
+h4
+{
+  color: #fff;
+}
+
+span
+{
+  color: #fff;
+}
+
+strong
+{
+  color: #fff;
+}
+
+.title
+{
+  background-color: rgba(49, 49, 49, 0.295);
+  border-radius: 5px;
+}
+
+hr
+{
+  border-color: #2b77c2;
+  height: 5px;
+  background-color: #2b77c2;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.little_hr
+{
+  border-color: #fff;
+  background-color: #fff;
+  height: 1px;
+}
+
+/*
+ * Header
+ */
+.masthead
+ {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand 
+{
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.nav-masthead .nav-link
+ {
+  padding: 10px;
+  font-weight: 700;
+  color: rgba(131, 0, 0, 0.897);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+  font-size: 25px;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus 
+{
+  border-bottom-color: rgba(65, 0, 0, 0.897);
+}
+
+.nav-masthead .nav-link + .nav-link 
+{
+  margin-left: 1rem;
+}
+
+.nav-masthead .active 
+{
+  color: rgb(131, 0, 0, 0.897);
+  border-bottom-color: rgba(131, 0, 0, 0.897);
+}
+
+@media (min-width: 48em) 
+{
+  /*.masthead-brand 
+  {
+    
+  }
+  .nav-masthead 
+  {
+    float: right;
+  }*/
+
+  .gridFlex
+  {
+    width: 500px;
+  }
+}
+
+
+/*
+ * Cover
+ */
+.cover 
+{
+  padding: 0 1.5rem;
+}
+.cover .btn-lg 
+{
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+
+/*
+ * Footer
+ */
+.mastfoot 
+{
+  color: rgba(255, 255, 255, 0.76);
+}
