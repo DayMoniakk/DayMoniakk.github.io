@@ -5,72 +5,77 @@
     <meta charset="utf-8" />
     <title>Go Chicken Updates</title>
     <style>
-        @font-face 
-        {
-            font-family: Anonymous Pro;
-            src: url("fonts/Anonymous Pro.ttf")
-        }
-
-        @font-face 
-        {
-            font-family: Anonymous Pro Bold;
-            src: url("fonts/Anonymous Pro B.ttf")
-        }
-
-        @font-face
-        {
-            font-family: Anonymous Pro Italic;
-            src: url("fonts/Anonymous Pro I.ttf")
-        }
-
-        @font-face
-        {
-            font-family: Anonymous Pro Bold Italic;
-            src: url("fonts/Anonymous Pro BI.ttf")
-        }
-
-        *
+        * 
         {
             box-sizing: border-box;
         }
-        body
+
+        body 
         {
             color: #e9edf2;
             background: #1E3955;
-            font-family: 'Anonymous Pro';
+            font-family: 'Anonymous Pro', monospace;
         }
-        p:last-child
+
+        p:last-child 
         {
             margin-bottom: 0;
         }
-        ul 
+
+        ul
         {
             list-style: none;
             padding: 0;
             margin: 0;
         }
+
         li 
         {
             background: #295076;
             padding: 1em;
             margin-bottom: 1em;
         }
-        h3
+
+        h3 
         {
             margin-top: 0;
             font-size: 1.3em;
             color: #fffbab;
-            font-family: 'Anonymous Pro Bold';
+            font-family: 'Anonymous Pro', monospace;
         }
-        img
-        {
+
+        img {
             width: 100%;
             max-width: 600px;
         }
     </style>
+
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <ul>
+        <li class="game-update 1.1">
+            <h3>
+                Version 1.1 : Introducing the quick save button !
+            </h3>
+            <p>
+                <img src="imgs/gochickenv1.1.png"/>
+                <br> Hello ! One month after the official release it is now time to do some fixes !
+                <br> Remember, when updating the game your progress is saved and you can remove the folder of the previous game update.
+                <br> Have fun playing, and as always if you need assistance don't forget to message me.
+                <br>
+                <br>CHANGELOG :
+                <br>
+                <br> + Added quick save button : you have one save to use on each level, choose the right moment
+                <br>
+                <br> Fixed zombie detection in level 12
+                <br> Fixed a conflict with the escape key when editings controls in the main menu
+                <br> Fixed player freezing bug when completing a level
+                <br> Fixed several conflicts with the quick saving system
+            </p>
+        </li>
+
         <li class="game-update 1.0">
             <h3>
                 Version 1.0 : OFFICIAL RELEASE !
