@@ -52,10 +52,9 @@ body
 .homeLogo
 {
   width: 100%;
-  transform: scale(1.2);
-  max-width: 600px;
-  max-height: 600px;
-  margin-top: -50px;
+  max-width: 500px;
+  max-height: 500px;
+  margin-top: -60px;
 }
 
 .socialBtn
