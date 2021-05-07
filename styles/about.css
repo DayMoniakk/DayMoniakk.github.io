@@ -22,11 +22,6 @@ a:hover
   margin: 5px;
 }
 
-.btn-secondary:hover
-{
-  transform: scale(1.05);
-}
-
 
 /*
  * Base structure
@@ -35,7 +30,7 @@ a:hover
 html,
 body 
 {
-  height: 125%;
+  height: 100%;
   background-color: rgb(27, 27, 27);
 }
 
@@ -49,9 +44,42 @@ body
   font-family: 'Anonymous Pro', monospace;
 }
 
-.backgroundColor
+.cover-container 
+{
+  max-width: 50em;
+}
+
+.avatarPic
+{
+  width: 100%;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.title
+{
+  margin-top: 30px;
+  margin-bottom: -5px;
+  background-color: rgba(49, 49, 49, 0.295);
+}
+
+.description
+{
+  display: inline;
+  font-size: 20px;
+  color: white;
+}
+
+.descriptionBox
 {
   background-color: rgba(49, 49, 49, 0.295);
+  padding: 20px;
+}
+
+span
+{
+  color: rgb(168, 0, 0);
+  text-decoration: underline;
 }
 
 .socialBtn
@@ -76,69 +104,6 @@ body
 .socialBtn a:hover
 {
   transform: scale(1.2);
-}
-
-
-.card
-{
-  background-color: #295076;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  background-clip: border-box;
-  border: 2px solid rgba(131, 0, 0, 0.897);
-  border-radius: 0.25em;
-  color: #fff;
-}
-
-h2
-{
-  padding-top: 5px;
-  font-variant-caps: all-small-caps;
-  font-size: 40px;
-}
-
-.jumbotron 
-{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  margin-bottom: 0;
-  background-color: #fff;
-}
-@media (min-width: 768px) 
-{
-  .jumbotron 
-  {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-}
-
-.jumbotron p:last-child 
-{
-  margin-bottom: 0;
-}
-
-.jumbotron h1 
-{
-  font-weight: 300;
-}
-
-.jumbotron .container
- {
-  max-width: 40rem;
-}
-
-footer 
-{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-footer p 
-{
-  margin-bottom: .25rem;
 }
 
 /*
@@ -180,6 +145,32 @@ footer p
 {
   color: rgb(131, 0, 0, 0.897);
   border-bottom-color: rgba(131, 0, 0, 0.897);
+}
+
+@media (min-width: 48em) 
+{
+  /*.masthead-brand 
+  {
+    
+  }
+  .nav-masthead 
+  {
+    float: right;
+  }*/
+}
+
+
+/*
+ * Cover
+ */
+.cover 
+{
+  padding: 0 1.5rem;
+}
+.cover .btn-lg 
+{
+  padding: .75rem 1.25rem;
+  font-weight: 700;
 }
 
 
