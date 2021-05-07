@@ -22,6 +22,29 @@ a:hover
   margin: 5px;
 }
 
+.socialBtn
+{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  justify-content: space-around;
+  display: flex;
+  max-width: 200px;
+}
+
+.socialBtn a
+{
+  text-decoration: none;
+  transition: 0.4s all;
+  font-size: 28px;
+  color: rgb(131, 0, 0, 0.897);
+  text-align: center;
+}
+
+.socialBtn a:hover
+{
+  transform: scale(1.2);
+}
 
 /*
  * Base structure
@@ -30,7 +53,7 @@ a:hover
 html,
 body 
 {
-  height: 125%;
+  height: 130%;
   background-color: rgb(27, 27, 27);
 }
 

@@ -27,7 +27,78 @@ a:hover
  * Base structure
  */
 
- .socialBtn
+html,
+body 
+{
+  height: 180%;
+  background-color: rgb(27, 27, 27);
+}
+
+body 
+{
+  display: -ms-flexbox;
+  display: flex;
+  color: rgb(168, 0, 0);
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  font-family: 'Anonymous Pro', monospace;
+}
+
+.cover-container 
+{
+  max-width: 50em;
+}
+
+.avatarPic
+{
+  width: 100%;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.title
+{
+  font-size: 25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: rgba(49, 49, 49, 0.295);
+  padding: 10px;
+}
+
+.description
+{
+  display: inline;
+  font-size: 15px;
+  color: white;
+}
+
+.descriptionTitle
+{
+  display: inline;
+  font-size: 20px;
+  color: rgba(216, 0, 0, 0.562);
+  text-decoration: underline;
+}
+
+.descriptionBox
+{
+  background-color: rgba(49, 49, 49, 0.295);
+  padding: 20px;
+}
+
+span
+{
+  color: rgba(255, 208, 0, 0.562);
+  text-decoration: underline;
+}
+
+.hyperlinkBtn
+{
+  color: rgba(136, 255, 0, 0.562);
+  text-decoration: underline;
+}
+
+.socialBtn
 {
   margin-left: auto;
   margin-right: auto;
@@ -49,98 +120,6 @@ a:hover
 .socialBtn a:hover
 {
   transform: scale(1.2);
-}
-
-html,
-body 
-{
-  height: 137%;
-  background-color: rgb(27, 27, 27);
-}
-
-body 
-{
-  display: -ms-flexbox;
-  display: flex;
-  color: rgb(168, 0, 0);
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-  font-family: 'Anonymous Pro', monospace;
-}
-
-.cover-container 
-{
-  max-width: 68em;
-}
-
-.gridFlex
-{
-  display: flex;
-  justify-content: center;
-  width: 225px;
-  margin: 0 auto;
-}
-
-.gridFlex img
-{
-  margin: 5px;
-  display: inline-block;
-  border-radius: 5px;
-}
-
-img
-{
-  width: 100%;
-  max-width: 600px;
-}
-
-h2
-{
-  color: #2b77c2;
-  font-size: 50px;
-}
-
-h3
-{
-  color: #2b77c2;
-  font-size: 17px;
-}
-
-h4
-{
-  color: #fff;
-}
-
-span
-{
-  color: #fff;
-}
-
-strong
-{
-  color: #fff;
-}
-
-.title
-{
-  background-color: rgba(49, 49, 49, 0.295);
-  border-radius: 5px;
-}
-
-hr
-{
-  border-color: #2b77c2;
-  height: 5px;
-  background-color: #2b77c2;
-  border-radius: 15px;
-  text-align: center;
-}
-
-.little_hr
-{
-  border-color: #fff;
-  background-color: #fff;
-  height: 1px;
 }
 
 /*
@@ -194,11 +173,6 @@ hr
   {
     float: right;
   }*/
-
-  .gridFlex
-  {
-    width: 500px;
-  }
 }
 
 
