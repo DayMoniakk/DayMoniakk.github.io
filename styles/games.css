@@ -87,7 +87,7 @@ body
   flex-direction: column;
   min-width: 0;
   background-clip: border-box;
-  border: 2px solid rgba(131, 0, 0, 0.897);
+  border: 2px solid rgb(16, 37, 58);
   border-radius: 0.25em;
   color: #fff;
 }
