@@ -1,0 +1,19 @@
+/* FIREFOX */
+html{
+    scrollbar-color: rgb(172, 172, 172) rgb(233, 233, 233);
+    scrollbar-width: normal;
+}
+
+/* CHROME */
+html::-webkit-scrollbar{
+    width: 15px;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: rgb(172, 172, 172);
+}
+html::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(134, 134, 134);
+}
+html::-webkit-scrollbar-track{
+    background-color: rgb(233, 233, 233);
+}
