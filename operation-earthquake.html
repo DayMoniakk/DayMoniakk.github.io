@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operation: Earthquake</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/lightbox.css">
+    <link rel="shortcut icon" href="resources/favicon.png" type="image/x-icon">
+
+    <script src="scripts/navbar.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/lightbox.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <img src="resources/logo.png" alt="the logo of DayMoniakk Games" class="nav-logo" id="nav-logo">
+        <div class="nav-buttons" id="nav-buttons">
+            <span class="nav-btn" id="btn-about">ABOUT</span>
+            <span class="nav-btn" id="btn-games">PROJECTS</span>
+            <span class="nav-btn" id="btn-links">LINKS</span>
+            <div class="nav-separator"></div>
+            <a class="fa-brands fa-youtube fa-xl nav-icon" href="https://www.youtube.com/channel/UC7KPd_xFKEPD5bhVng0c2Ng" target="_blank"></a>
+            <a class="fa-brands fa-twitter fa-xl nav-icon" href="https://twitter.com/daymoniakk" target="_blank"></a>
+            <a class="fa-brands fa-twitch fa-xl nav-icon" href="https://www.twitch.tv/daymoniakk" target="_blank"></a>
+            <a class="fa-brands fa-itch-io fa-xl nav-icon" href="https://daymoniakk.itch.io" target="_blank"></a>
+        </div>
+        <i class="fa-solid fa-bars fa-2xl" id="nav-hamburger"></i>
+    </div>
+
+    <main class="container">
+        <div class="title-container">
+            <h1 class="title">Operation: Earthquake</h1>
+        </div>
+        <div class="screenshots-container">
+            <div class="screenshots-row">
+                <img id="screenshot" src="resources/operation-earthquake_00.png" alt="">
+                <img id="screenshot" src="resources/operation-earthquake_01.png" alt="">
+            </div>
+            <div class="screenshots-row">
+                <img id="screenshot" src="resources/operation-earthquake_02.png" alt="">
+                <img id="screenshot" src="resources/operation-earthquake_03.png" alt="">
+            </div>
+        </div>
+
+        <div class="game-description">
+            <h3>
+                <span>Operation: Earthquake</span> is a short top down shooter made for the <a href="https://itch.io/jam/love2d-jam-2022" target="_blank">LÖVE Jam 2022</a>.
+                <br>
+                I wasn't really inspired by the <span>theme</span> so I've implemented it somehow into the game scenario.
+                <br>
+                My main objective was to create a small game that I will be able to finish and I think I succedeed !
+                <br>
+                <br>
+                This is my <span>first ever project</span> released using the <span>Lua</span> programming language and this <a href="https://love2d.org/" target="_blank">framework</a>.
+            </h3>
+        </div>
+
+        <div class="game-info">
+            <div class="info-container">
+                <h2 class="info-first">Game Status:</h2>
+                <div class="second-container">
+                    <h2 class="info-second info-green">Released (version 1.0)</h2>
+                </div>
+            </div>
+
+            <div class="info-container">
+                <h2 class="info-first">Game Engine:</h2>
+                <div class="second-container">
+                    <h2 class="info-second">LÖVE 11.4</h2>
+                </div>
+            </div>
+
+            <div class="info-container">
+                <h2 class="info-first">Latest Update:</h2>
+                <div class="second-container">
+                    <h2 class="info-second">5th March 2022</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons-container">
+            <a href="https://daymoniakk.itch.io/operation-earthquake" target="_blank">Download</a>
+            <a href="https://github.com/DayMoniakk/Operation-Earthquake" target="_blank" style="background-color: #37ad00;">Source Code</a>
+            <a style="background-color: rgb(109, 109, 109);" href="https://www.youtube.com/watch?v=pqtNU9vZ0z4" target="_blank">Watch the Making Of</a>
+        </div>
+
+        <div class="specs" style="width: 400px;">
+            <div class="specs-column" style="width: 100%">
+                <div class="specs-title-container">
+                    <h3 class="specs-title" style="color: #51ff00;">Recommended :</h3>
+                    <h3 class="specs-subtitle">(1080p)</h3>
+                </div>
+
+                <div class="specs-row">
+                    <div class="specs-row-title">Operating System :</div>
+                    <div class="specs-row-content">Windows XP Service Pack 3</div>
+                </div>
+                <div class="specs-row">
+                    <div class="specs-row-title">Processor :</div>
+                    <div class="specs-row-content">Dual core CPU</div>
+                </div>
+                <div class="specs-row">
+                    <div class="specs-row-title">Memory :</div>
+                    <div class="specs-row-content">2 GB RAM</div>
+                </div>
+                <div class="specs-row">
+                    <div class="specs-row-title">Graphics :</div>
+                    <div class="specs-row-content">OpenGL 3.0 card with 512MB VRAM.</div>
+                </div>
+                <div class="specs-row">
+                    <div class="specs-row-title">Storage :</div>
+                    <div class="specs-row-content">10 MB available space</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer style="margin-top: 50px;">
+        <span id="footer-text">DayMoniakk Games</span>
+    </footer>
+</body>
+</html>

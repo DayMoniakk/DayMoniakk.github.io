@@ -1,4 +1,4 @@
 # DayMoniakk.github.io
-A simple website I made back then when I took my first steps into web development.
+Updated version of the website I made back then when I was learning web development.
 
-***I'm definitely going to remake it someday....***
+***Everything is made in vanilla HTML, CSS & Javascript***

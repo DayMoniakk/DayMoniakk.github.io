@@ -1,71 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DayMoniakk Games</title>
-    <link rel="icon" type="image/png" href="imgs/LogoUpscaled.png">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="shortcut icon" href="resources/favicon.png" type="image/x-icon">
 
-        <style>
-            .bd-placeholder-img 
-            {
-              font-size: 1.125rem;
-              text-anchor: middle;
-              -webkit-user-select: none;
-              -moz-user-select: none;
-              -ms-user-select: none;
-              user-select: none;
-            }
-      
-            @media (min-width: 768px) 
-            {
-              .bd-placeholder-img-lg 
-              {
-                font-size: 3.5rem;
-              }
-            }
-          </style>
-          <link href="styles/main.css" rel="stylesheet">
-    </head>  
-    <body class="text-center">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="scripts/navbar.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+</head>
+<body>
+    <div id="is-home-page"></div>
 
+    <div class="navbar">
+        <img src="resources/logo.png" alt="the logo of DayMoniakk Games" class="nav-logo" id="nav-logo">
+        <div class="nav-buttons" id="nav-buttons">
+            <span class="nav-btn" id="btn-about">ABOUT</span>
+            <span class="nav-btn" id="btn-games">PROJECTS</span>
+            <span class="nav-btn" id="btn-links">LINKS</span>
+            <div class="nav-separator"></div>
+            <a class="fa-brands fa-youtube fa-xl nav-icon" href="https://www.youtube.com/channel/UC7KPd_xFKEPD5bhVng0c2Ng" target="_blank"></a>
+            <a class="fa-brands fa-twitter fa-xl nav-icon" href="https://twitter.com/daymoniakk" target="_blank"></a>
+            <a class="fa-brands fa-twitch fa-xl nav-icon" href="https://www.twitch.tv/daymoniakk" target="_blank"></a>
+            <a class="fa-brands fa-itch-io fa-xl nav-icon" href="https://daymoniakk.itch.io" target="_blank"></a>
+        </div>
+        <i class="fa-solid fa-bars fa-2xl" id="nav-hamburger"></i>
+    </div>
 
-        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-            <header class="masthead mb-auto">
-              <div class="inner">
-                <nav class="nav nav-masthead justify-content-center">
-                  <a class="nav-link active" href="index.html">Home</a>
-                  <a class="nav-link" href="games.html">Games</a>
-                  <a class="nav-link" href="about.html">About</a>
-                </nav>
-              </div>
-            </header>
-          
-            <main role="main" class="inner cover">
-              <img src="imgs/LogoUpscaled.png" class="homeLogo">
-              <p class="lead" style="padding-top: 50px;">
-                <div class="socialBtn" style="background-color: rgba(49, 49, 49, 0.295); padding-top: 10px; padding-bottom: 10px; border-radius: 15px;">
-                  <a class="fab fa-youtube" href="https://www.youtube.com/channel/UC7KPd_xFKEPD5bhVng0c2Ng" target="blank" style="color: rgb(177, 0, 0)"></a>
-                  <a class="fab fa-twitter" href="https://twitter.com/daymoniakk" target="blank" style="color: rgb(0, 112, 177);"></a> 
-                  <a class="fab fa-itch-io" href="https://daymoniakk.itch.io/" target="blank" style="color: rgb(202, 64, 0);"></a>    
-                  <a class="fab fa-github" href="https://github.com/DayMoniakk" target="blank" style="color:gray;"></a>               
-                </div>
-              </p>
-            </main>
-          
-            <footer class="mastfoot mt-auto">
-              <div class="inner">
-                <p>DayMoniakk <script>document.write(new Date().getFullYear())</script>.</p>
-              </div>
-            </footer>
-          </div>
+    <section id="section-header"></section>
 
-    </body>
+    <section id="section-about">
+        <h1 class="section-title">About</h1>
+        <div class="about-container">
+            <h2 class="section-subtitle">
+                Hello, nice to meet you !
+                <br>
+                <br>
+                I'm <span class="text-highlight">DayMoniakk</span>, the clumsy french guy of <span class="text-highlight">24 years old</span>  !
+                <br>
+                I am a hobbyist developer since <span class="text-highlight">2017</span>, I started with RPG Maker then Unity, since then I can't manage to stop learning new things !
+                <br>
+                I also love playing games, <span class="text-highlight">streaming</span> and <span class="text-highlight">producing music</span> (you can find more about it in the links tab)
+                <br>
+                <br>
+                I wish you a nice tour of my website =)
+            </h2>
+        </div>
+    </section>
+
+    <section id="section-games">
+        <h1 class="section-title">Projects</h1>
+        <h2 class="section-subtitle">Latest Releases and Upcoming Projects</h2>
+        <div class="games-container">
+            <div class="game-item">
+                <img src="resources/game_go-chicken.png" alt="image of Go Chicken" class="game-item-img">
+                <h2 class="game-item-title">Go Chicken</h2>
+                <span class="game-item-subtitle">Can you beat the 60 levels? Find out in this little adventure !</span>
+            </div>
+            <div class="game-item">
+                <img src="resources/game_strength-quest.png" alt="image of Strength Quest" class="game-item-img">
+                <h2 class="game-item-title">Strength Quest</h2>
+                <span class="game-item-subtitle">Simple RogueLite game with cards made in 7 days for Blackthornprod GAME JAM #3.</span>
+            </div>
+            <div class="game-item">
+                <img src="resources/game_operation-earthquake.png" alt="image of Operation Earthquake" class="game-item-img">
+                <h2 class="game-item-title">Operation: Earthquake</h2>
+                <span class="game-item-subtitle">A top down shooter written in lua and made in 7 days for the LÖVE JAM 2022.</span>
+            </div>
+            <div class="game-item">
+                <img src="resources/app_twitch-cat-overlay.png" alt="image of [GameNAME]" class="game-item-img">
+                <h2 class="game-item-title">Twitch Cat Overlay</h2>
+                <span class="game-item-subtitle">Interactive Twitch overlay made with the Godot Engine</span>
+            </div>
+            <!-- <div class="game-item">
+                <img src="resources/placeholder.png" alt="image of [GameNAME]" class="game-item-img">
+                <h2 class="game-item-title">Game Name</h2>
+                <span class="game-item-subtitle">Game details goes here.</span>
+            </div> -->
+        </div>
+    </section>
+
+    <footer>
+        <span id="footer-text">DayMoniakk Games</span>
+    </footer>
+</body>
 </html>

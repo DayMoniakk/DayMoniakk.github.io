@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+
+    /* Firefox */
+    scrollbar-color: rgb(66, 66, 66) rgb(48, 48, 48);
+    scrollbar-width: normal;
+}
+
+/* CHROME */
+html::-webkit-scrollbar{
+    width: 15px;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: rgb(66, 66, 66);
+}
+html::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(97, 97, 97);
+}
+html::-webkit-scrollbar-track{
+    background-color: rgb(48, 48, 48);
+}
+
+body{
+    background-color: rgb(26, 25, 25);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection{
+    background-color: firebrick;
+}
+
+::-moz-selection{
+    background-color: firebrick;
+}
+
+body{
+    animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+
+footer{
+    background-color: var(--gray-bg);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 5px solid rgb(30, 30, 30);
+}
+footer > span {
+    color: rgb(168, 168, 168);
+    font-family: 'News Cycle', sans-serif;
+    font-size: 0.9em;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitch Cat Overlay</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/lightbox.css">
+    <link rel="shortcut icon" href="resources/favicon.png" type="image/x-icon">
+
+    <script src="scripts/navbar.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/lightbox.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <img src="resources/logo.png" alt="the logo of DayMoniakk Games" class="nav-logo" id="nav-logo">
+        <div class="nav-buttons" id="nav-buttons">
+            <span class="nav-btn" id="btn-about">ABOUT</span>
+            <span class="nav-btn" id="btn-games">PROJECTS</span>
+            <span class="nav-btn" id="btn-links">LINKS</span>
+            <div class="nav-separator"></div>
+            <a class="fa-brands fa-youtube fa-xl nav-icon" href="https://www.youtube.com/channel/UC7KPd_xFKEPD5bhVng0c2Ng" target="_blank"></a>
+            <a class="fa-brands fa-twitter fa-xl nav-icon" href="https://twitter.com/daymoniakk" target="_blank"></a>
+            <a class="fa-brands fa-twitch fa-xl nav-icon" href="https://www.twitch.tv/daymoniakk" target="_blank"></a>
+            <a class="fa-brands fa-itch-io fa-xl nav-icon" href="https://daymoniakk.itch.io" target="_blank"></a>
+        </div>
+        <i class="fa-solid fa-bars fa-2xl" id="nav-hamburger"></i>
+    </div>
+
+    <main class="container">
+        <div class="title-container">
+            <h1 class="title">Twitch Cat Overlay</h1>
+        </div>
+        <div class="screenshots-container">
+            <div class="screenshots-row">
+                <img id="screenshot" src="resources/twitch-cat-overlay_00.png" alt="">
+                <img id="screenshot" src="resources/twitch-cat-overlay_01.png" alt="">
+            </div>
+            <div class="screenshots-row">
+                <img id="screenshot" src="resources/twitch-cat-overlay_03.png" alt="">
+                <img id="screenshot" src="resources/twitch-cat-overlay_04.png" alt="">
+            </div>
+        </div>
+
+        <div class="game-description">
+            <h3>
+                This is a cat themed <span>interactive</span> overlay for <span>Nosfear</span>.
+                <br>
+                Users who talk in chat are roaming on the screen with their matching username's colors and roles.
+                <br>
+                <span>Commands</span> can be used to interact with the streamer's cats, to start a <span>duel</span> between two viewers or even to <span>throw bombs</span> at each others !
+                <br>
+                <br>
+                The application is running on the <span>Godot Engine</span>, the Twitch handling is custom made in <span>C#</span>.
+                <br>
+                Everything else is programmed in <span>GDscript</span>.
+            </h3>
+        </div>
+
+        <div class="game-info">
+            <div class="info-container">
+                <h2 class="info-first">App Status:</h2>
+                <div class="second-container">
+                    <h2 class="info-second info-red">Private</h2>
+                </div>
+            </div>
+
+            <div class="info-container">
+                <h2 class="info-first">Technology:</h2>
+                <div class="second-container">
+                    <h2 class="info-second">Godot 3.5.1</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons-container">
+            <a href="https://www.twitch.tv/nosfear" target="_blank">Look at the overlay</a>
+        </div>
+    </main>
+
+    <footer style="margin-top: 50px;">
+        <span id="footer-text">DayMoniakk Games</span>
+    </footer>
+</body>
+</html>

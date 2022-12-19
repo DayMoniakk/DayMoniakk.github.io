@@ -1,0 +1,149 @@
+#section-header{
+    width: 100%;
+    height: 650px;
+    background: url("../resources/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(26, 25, 25);
+}
+
+#section-about{
+    background-color: rgb(26, 25, 25);
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-title{
+    color: firebrick;
+    font-family: sans-serif;
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-family: 'News Cycle', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.section-subtitle{
+    color: rgb(207, 178, 178);
+    font-family: sans-serif;
+    font-size: 1.2em;
+    font-family: 'News Cycle', sans-serif;
+    text-align: center;
+}
+
+.text-highlight{
+    color: firebrick;
+}
+
+.about-container {
+    height: 70%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section-games{
+    background-color: rgb(31, 29, 29);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.games-container{
+    --gap: 16px;
+    --num-cols: 3;
+    --row-height: 350px;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    padding: var(--gap);
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.game-item{
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    background-color: rgba(58, 58, 58, 0.233);
+    border-radius: 5px;
+}
+.game-item:hover{
+    background-color: rgb(49, 49, 49);
+    border-radius: 5px;
+    transform: scale(1.025, 1.025);
+}
+.game-item-img{
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    padding-top: 10px;
+}
+.game-item-title{
+    font-family: 'News Cycle', sans-serif;
+    font-weight: 700;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+.game-item-subtitle{
+    font-family: 'News Cycle', sans-serif;
+    color: white;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px){
+    .section-title{
+        font-size: 2.5em;
+    }
+    .section-subtitle{
+        font-size: 1em;
+    }
+
+    .about-container{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .about-img{
+        width: 50vw;
+        height: auto;
+        margin-right: 0;
+    }
+    .itch-btn{
+        margin-left: 0;
+    }
+    .itch-btn img{
+        width: 200px;
+        user-select: none;
+    }
+
+    #section-games{
+        height: 1800px;
+    }
+    .games-container{
+        display: flex;
+        flex-direction: column;
+        gap: 50px
+    }
+}
