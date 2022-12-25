@@ -252,4 +252,8 @@ hr{
         width: 100%;
         gap: 5px;
     }
+
+    .title-container{
+        height: auto;
+    }
 }
