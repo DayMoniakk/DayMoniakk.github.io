@@ -1,156 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Go Chicken</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/project.css">
-    <link rel="stylesheet" href="styles/navbar.css">
-    <link rel="stylesheet" href="styles/lightbox.css">
-    <link rel="shortcut icon" href="resources/favicon.png" type="image/x-icon">
-
-    <script src="scripts/navbar.js" defer></script>
-    <script src="scripts/footer.js" defer></script>
-    <script src="scripts/lightbox.js" defer></script>
-</head>
-<body>
-    <div class="navbar">
-        <img src="resources/logo.png" alt="the logo of DayMoniakk Games" class="nav-logo" id="nav-logo">
-        <div class="nav-buttons" id="nav-buttons">
-            <span class="nav-btn" id="btn-about">ABOUT</span>
-            <span class="nav-btn" id="btn-games">PROJECTS</span>
-            <span class="nav-btn" id="btn-links">LINKS</span>
-            <div class="nav-separator"></div>
-            <a class="fa-brands fa-youtube fa-xl nav-icon" href="https://www.youtube.com/channel/UC7KPd_xFKEPD5bhVng0c2Ng" target="_blank"></a>
-            <a class="fa-brands fa-twitter fa-xl nav-icon" href="https://twitter.com/daymoniakk" target="_blank"></a>
-            <a class="fa-brands fa-twitch fa-xl nav-icon" href="https://www.twitch.tv/daymoniakk" target="_blank"></a>
-            <a class="fa-brands fa-itch-io fa-xl nav-icon" href="https://daymoniakk.itch.io" target="_blank"></a>
-        </div>
-        <i class="fa-solid fa-bars fa-2xl" id="nav-hamburger"></i>
-    </div>
-
-    <main class="container">
-        <div class="title-container">
-            <h1 class="title">Go Chicken</h1>
-        </div>
-        <div class="screenshots-container">
-            <div class="screenshots-row">
-                <img id="screenshot" src="resources/go-chicken-gif.gif" alt="">
-                <img id="screenshot" src="resources/go-chicken-time-events.png" alt="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DayMoniakk Games - Go Chicken</title>
+        <link rel="shortcut icon" href="static/images/favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/project.css" />
+        <script src="scripts/main.js" defer></script>
+        <script src="scripts/project.js" defer></script>
+    </head>
+    <body>
+        <div class="project-container">
+            <div class="title-container">
+                <h1>Go Chicken</h1>
             </div>
-            <div class="screenshots-row">
-                <img id="screenshot" src="resources/go-chicken-level.png" alt="">
-                <img id="screenshot" src="resources/go-chicken-winter-level.png" alt="">
+            
+            <div class="screenshots-grid">
+                <img src="static/images/projects/Go Chicken/Trailer.gif" id="screenshot" alt="Trailer Gif">
+                <img src="static/images/projects/Go Chicken/Time Events.png" id="screenshot" alt="Timed events">
+                <img src="static/images/projects/Go Chicken/Level.png" id="screenshot" alt="Game level">
+                <img src="static/images/projects/Go Chicken/Winter Level.png" id="screenshot" alt="Snowy game level">
             </div>
-        </div>
 
-        <div class="game-description">
-            <h3>
-                <span>Go Chicken </span> is a little simple game based on <span>simple mechanics</span>, you have only 4 buttons and your skill !
+            <p class="project-description">
+                <highlight>Go Chicken</highlight> is a little simple game based on <highlight>simple mechanics</highlight>, you have only 4 buttons and your skill !
                 <br>
-                Your goal is to reach the end of each levels by collecting the <span>eggs</span> (or not....)
+                Your goal is to reach the end of each levels by collecting the <highlight>eggs</highlight> (or not....)
                 <br>
-                But wait, it's not that easy... the game is populated with <span>monsters</span> that can kill you instantly, so watch your steps !
+                But wait, it's not that easy... the game is populated with <highlight>monsters</highlight> that can kill you instantly, so watch your steps !
                 <br>
                 <br>
-                The game is available in <span>English</span> and <span>French</span> languages !
+                The game is available in <highlight>English</highlight> and <highlight>French</highlight> languages !
                 <br>
-                It represents <span>10 months of development</span>, and it's the <span>first project</span> I've ever completed.
-            </h3>
-        </div>
+                It represents <highlight>10 months of development</highlight>, and it's the <highlight>first game project</highlight> I've ever completed. 
+                <br>
+                <br>
+                The game received a <highlight>major update</highlight> on September 19th 2022, the changelog can be found <a href="https://daymoniakk.itch.io/go-chicken/devlog/429730/go-chicken-20-major-changes" target="_blank">here</a>.
+            </p>
 
-        <div class="game-info">
-            <div class="info-container">
-                <h2 class="info-first">Game Status:</h2>
-                <div class="second-container">
-                    <h2 class="info-second info-green">Released (version 2.0)</h2>
+            <div class="project-stats">
+                <div class="project-stat-row">
+                    <h3 class="stat-title">Project Status:</h3>
+                    <h3 class="stat-subtitle green">Released (version 2.0)</h3>
+                </div>
+                <div class="stat-separator"></div>
+                <div class="project-stat-row">
+                    <h3 class="stat-title">Technology:</h3>
+                    <h3 class="stat-subtitle gray">Unity 2021.3.8f1</h3>
+                </div>
+                <div class="stat-separator"></div>
+                <div class="project-stat-row">
+                    <h3 class="stat-title">Release Date:</h3>
+                    <h3 class="stat-subtitle gray">1st June 2020</h3>
                 </div>
             </div>
 
-            <div class="info-container">
-                <h2 class="info-first">Game Engine:</h2>
-                <div class="second-container">
-                    <h2 class="info-second">Unity 2021.3.8f1</h2>
-                </div>
-            </div>
-
-            <div class="info-container">
-                <h2 class="info-first">Latest Update:</h2>
-                <div class="second-container">
-                    <h2 class="info-second">19th July 2022</h2>
-                </div>
-            </div>
-        </div>
-
-        <div class="buttons-container">
-            <a href="https://daymoniakk.itch.io/go-chicken" target="_blank">Download</a>
-            <a style="background-color: rgb(109, 109, 109);" href="https://www.youtube.com/watch?v=i2qxoXeXhwc" target="_blank">Watch Trailer</a>
-        </div>
-
-        <div class="specs">
-            <div class="specs-column">
-                <div class="specs-title-container">
-                    <h3 class="specs-title">Minimal :</h3>
-                    <h3 class="specs-subtitle">(720p low settings)</h3>
-                </div>
-
-                <div class="specs-row">
-                    <div class="specs-row-title">Operating System :</div>
-                    <div class="specs-row-content">Windows 7 64-bits</div>
-                </div>
-                <div class="specs-row">
-                    <div class="specs-row-title">Processor :</div>
-                    <div class="specs-row-content">Dual core CPU</div>
-                </div>
-                <div class="specs-row">
-                    <div class="specs-row-title">Memory :</div>
-                    <div class="specs-row-content">4 GB RAM</div>
-                </div>
-                <div class="specs-row">
-                    <div class="specs-row-title">Graphics :</div>
-                    <div class="specs-row-content">AMD Radeon HD 7450 1GB</div>
-                </div>
-                <div class="specs-row">
-                    <div class="specs-row-title">Storage :</div>
-                    <div class="specs-row-content">350 MB available space</div>
-                </div>
-            </div>
-            <div class="specs-column">
-                <div class="specs-title-container">
-                    <h3 class="specs-title" style="color: #51ff00;">Recommended :</h3>
-                    <h3 class="specs-subtitle">(1080p max settings)</h3>
-                </div>
-
-                <div class="specs-row">
-                    <div class="specs-row-title">Operating System :</div>
-                    <div class="specs-row-content">Windows 10 64-bits</div>
-                </div>
-                <div class="specs-row">
-                    <div class="specs-row-title">Processor :</div>
-                    <div class="specs-row-content">Quad core CPU</div>
-                </div>
-                <div class="specs-row">
-                    <div class="specs-row-title">Memory :</div>
-                    <div class="specs-row-content">4 GB RAM</div>
-                </div>
-                <div class="specs-row">
-                    <div class="specs-row-title">Graphics :</div>
-                    <div class="specs-row-content">NVIDIA GeForce GT 1030 2GB</div>
-                </div>
-                <div class="specs-row">
-                    <div class="specs-row-title">Storage :</div>
-                    <div class="specs-row-content">350 MB available space</div>
-                </div>
+            <div class="buttons-container">
+                <a class="red" href="https://daymoniakk.itch.io/go-chicken" target="_blank">Download</a>
+                <a href="https://www.youtube.com/watch?v=i2qxoXeXhwc" target="_blank">Watch Trailer</a>
             </div>
         </div>
-    </main>
-
-    <footer style="margin-top: 50px;">
-        <span id="footer-text">DayMoniakk Games</span>
-    </footer>
-</body>
+    </body>
 </html>

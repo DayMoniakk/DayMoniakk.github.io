@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DayMoniakk Games - BotMoniakk</title>
+        <link rel="shortcut icon" href="static/images/favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/project.css" />
+        <script src="scripts/main.js" defer></script>
+        <script src="scripts/project.js" defer></script>
+    </head>
+    <body>
+        <div class="project-container">
+            <div class="title-container">
+                <h1>BotMoniakk</h1>
+            </div>
+            
+            <div class="screenshots-grid">
+                <img src="static/images/projects/BotMoniakk/bot_img.png" id="screenshot" alt="Bot profile picture">
+                <img src="static/images/projects/BotMoniakk/bot_01.png" id="screenshot" alt="Bot preview">
+            </div>
+
+            <p class="project-description">
+                <highlight>BotMoniakk</highlight> is a <highlight>Python</highlight> based <highlight>Twitch moderator</highlight> and assistant.
+                <br>
+                The bot integrates with the Twitch API and uses the TwitchIO library to interact with the Twitch chat.
+                <br>
+                <br>
+                Features:
+                <br>
+                <br>
+                ● <highlight>Analyzes each chat messages</highlight> and <highlight>assign a category</highlight> that represents the message's content, this process is <highlight>extremely fast</highlight> and <highlight>lightweight</highlight>.
+                <br>
+                <br>
+                The categories are the following:
+                <br>
+                - Sexual
+                <br>
+                - Hate
+                <br>
+                - Violence
+                <br>
+                - Harassment
+                <br>
+                - Self-harm
+                <br>
+                - Sexual / Minors
+                <br>
+                - Hate / Threatening
+                <br>
+                - Violence / Graphic
+                <br>
+                - OK / Not offensive
+                <br>
+                The AI model used is <a href="https://huggingface.co/KoalaAI/Text-Moderation" target="_blank">this one</a>, it is far from perfect but it works. 
+                <br>
+                <br>
+                ● <highlight>Identifies and ban</highlight> bots advertising scam websites. (it banned so far <highlight>around a hundred users</highlight>)
+                <br>
+                <br>
+                ● <highlight>Logs moderation actions</highlight> in the Discord server using <highlight>webhooks</highlight>.
+                <br>
+                <br>
+                ● Warns me of his actions using <highlight>sound alerts</highlight>.
+                <br>
+                <br>
+                <br>
+                The <highlight>main goal</highlight> of the bot was having an <highlight>AI moderator doing the work of a human</highlight> but the technology isn't accurate enough for now.
+                <br>
+                (also my <highlight>AMD graphic card</highlight> cannot be used for AI related stuff so I have to use my <highlight>CPU</highlight> which <highlight>limits</highlight> a lot my options)
+            </p>
+
+            <div class="project-stats">
+                <div class="project-stat-row">
+                    <h3 class="stat-title">Project Status:</h3>
+                    <h3 class="stat-subtitle red">Private</h3>
+                </div>
+                <div class="stat-separator"></div>
+                <div class="project-stat-row">
+                    <h3 class="stat-title">Technology:</h3>
+                    <h3 class="stat-subtitle gray">Twitchio - Transformers - Python</h3>
+                </div>
+            </div>
+
+            <div class="buttons-container"></div>
+        </div>
+    </body>
+</html>

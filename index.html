@@ -1,104 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DayMoniakk Games</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DayMoniakk Games</title>
+        <link rel="shortcut icon" href="static/images/favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/index.css">
+        <script src="scripts/main.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <div class="banner"></div>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/navbar.css">
-    <link rel="shortcut icon" href="resources/favicon.png" type="image/x-icon">
-
-    <script src="scripts/navbar.js" defer></script>
-    <script src="scripts/home.js" defer></script>
-    <script src="scripts/footer.js" defer></script>
-</head>
-<body>
-    <div id="is-home-page"></div>
-
-    <div class="navbar">
-        <img src="resources/logo.png" alt="the logo of DayMoniakk Games" class="nav-logo" id="nav-logo">
-        <div class="nav-buttons" id="nav-buttons">
-            <span class="nav-btn" id="btn-about">ABOUT</span>
-            <span class="nav-btn" id="btn-games">PROJECTS</span>
-            <span class="nav-btn" id="btn-links">LINKS</span>
-            <div class="nav-separator"></div>
-            <a class="fa-brands fa-youtube fa-xl nav-icon" href="https://www.youtube.com/channel/UC7KPd_xFKEPD5bhVng0c2Ng" target="_blank"></a>
-            <a class="fa-brands fa-twitter fa-xl nav-icon" href="https://twitter.com/daymoniakk" target="_blank"></a>
-            <a class="fa-brands fa-twitch fa-xl nav-icon" href="https://www.twitch.tv/daymoniakk" target="_blank"></a>
-            <a class="fa-brands fa-itch-io fa-xl nav-icon" href="https://daymoniakk.itch.io" target="_blank"></a>
-        </div>
-        <i class="fa-solid fa-bars fa-2xl" id="nav-hamburger"></i>
-    </div>
-
-    <section id="section-header"></section>
-
-    <section id="section-about">
-        <h1 class="section-title">About</h1>
-        <div class="about-container">
-            <h2 class="section-subtitle">
-                Hello, nice to meet you !
-                <br>
-                <br>
-                I'm <span class="text-highlight">DayMoniakk</span>, the clumsy french guy of <span class="text-highlight">26 years old</span>  !
-                <br>
-                I am a hobbyist developer since <span class="text-highlight">2017</span>, I started with RPG Maker then Unity, since then I can't manage to stop learning new things !
-                <br>
-                I also love playing games, <span class="text-highlight">streaming</span> and <span class="text-highlight">producing music</span> (you can find more about it in the links tab)
-                <br>
-                <br>
-                I wish you a nice tour of my website =)
-            </h2>
-        </div>
-    </section>
-
-    <section id="section-games">
-        <h1 class="section-title">Projects</h1>
-        <h2 class="section-subtitle">Latest Releases and Upcoming Projects</h2>
-        <div class="games-container">
-            <div class="game-item">
-                <img src="resources/guncraftduels-map-redline.png" alt="image of Guncraft Duels" class="game-item-img">
-                <h2 class="game-item-title">Guncraft Duels</h2>
-                <span class="game-item-subtitle">Miniaturized version of the original Guncraft minigame, intended for 2-8 players (for Minecraft 1.19.2)</span>
+            <div class="about-card">
+                <img class="about-picture" src="static/images/me_irl.jpg" alt="irl picture">
+                <span class="about-text">
+                    👦 <highlight>DayMoniakk</highlight>
+                    <br>
+                    🎈 26 years old
+                    <br>
+                    🌍 France
+                    <br>
+                    <br>
+                    👨‍💻 Hobbyist Developer
+                    <br>
+                    🎵 Music Producer
+                    <br>
+                    🎬 Video Editor
+                </span>
             </div>
-            <div class="game-item">
-                <img src="resources/VtubeLighting_00.png" alt="image of VtubeLighting" class="game-item-img">
-                <h2 class="game-item-title">VtubeLighting</h2>
-                <span class="game-item-subtitle">Spout2 powered Vtubing application to implement screen lighting without these annoying yellow borders !</span>
-            </div>
-            <div class="game-item">
-                <img src="resources/app_twitch-cat-overlay.png" alt="image of Twitch Cat Overlay" class="game-item-img">
-                <h2 class="game-item-title">Twitch Cat Overlay</h2>
-                <span class="game-item-subtitle">Interactive Twitch overlay made with the Godot Engine</span>
-            </div>
-            <div class="game-item">
-                <img src="resources/game_go-chicken.png" alt="image of Go Chicken" class="game-item-img">
-                <h2 class="game-item-title">Go Chicken</h2>
-                <span class="game-item-subtitle">Can you beat the 60 levels? Find out in this little adventure !</span>
-            </div>
-            <div class="game-item">
-                <img src="resources/game_strength-quest.png" alt="image of Strength Quest" class="game-item-img">
-                <h2 class="game-item-title">Strength Quest</h2>
-                <span class="game-item-subtitle">Simple RogueLite game with cards made in 7 days for Blackthornprod GAME JAM #3.</span>
-            </div>
-            <div class="game-item">
-                <img src="resources/game_operation-earthquake.png" alt="image of Operation Earthquake" class="game-item-img">
-                <h2 class="game-item-title">Operation: Earthquake</h2>
-                <span class="game-item-subtitle">A top down shooter written in lua and made in 7 days for the LÖVE JAM 2022.</span>
-            </div>
-            <!-- <div class="game-item">
-                <img src="resources/placeholder.png" alt="image of [GameNAME]" class="game-item-img">
-                <h2 class="game-item-title">Game Name</h2>
-                <span class="game-item-subtitle">Game details goes here.</span>
-            </div> -->
-        </div>
-    </section>
-
-    <footer>
-        <span id="footer-text">DayMoniakk Games</span>
-    </footer>
-</body>
+        </main>
+    </body>
 </html>

@@ -1,128 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strengh Quest</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/project.css">
-    <link rel="stylesheet" href="styles/navbar.css">
-    <link rel="stylesheet" href="styles/lightbox.css">
-    <link rel="shortcut icon" href="resources/favicon.png" type="image/x-icon">
-
-    <script src="scripts/navbar.js" defer></script>
-    <script src="scripts/footer.js" defer></script>
-    <script src="scripts/lightbox.js" defer></script>
-</head>
-<body>
-    <div class="navbar">
-        <img src="resources/logo.png" alt="the logo of DayMoniakk Games" class="nav-logo" id="nav-logo">
-        <div class="nav-buttons" id="nav-buttons">
-            <span class="nav-btn" id="btn-about">ABOUT</span>
-            <span class="nav-btn" id="btn-games">PROJECTS</span>
-            <span class="nav-btn" id="btn-links">LINKS</span>
-            <div class="nav-separator"></div>
-            <a class="fa-brands fa-youtube fa-xl nav-icon" href="https://www.youtube.com/channel/UC7KPd_xFKEPD5bhVng0c2Ng" target="_blank"></a>
-            <a class="fa-brands fa-twitter fa-xl nav-icon" href="https://twitter.com/daymoniakk" target="_blank"></a>
-            <a class="fa-brands fa-twitch fa-xl nav-icon" href="https://www.twitch.tv/daymoniakk" target="_blank"></a>
-            <a class="fa-brands fa-itch-io fa-xl nav-icon" href="https://daymoniakk.itch.io" target="_blank"></a>
-        </div>
-        <i class="fa-solid fa-bars fa-2xl" id="nav-hamburger"></i>
-    </div>
-
-    <main class="container">
-        <div class="title-container">
-            <h1 class="title">Strengh Quest</h1>
-        </div>
-        <div class="screenshots-container">
-            <div class="screenshots-row">
-                <img id="screenshot" src="resources/strengh-quest_00.png" alt="">
-                <img id="screenshot" src="resources/strengh-quest_01.png" alt="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DayMoniakk Games - Strength Quest</title>
+        <link rel="shortcut icon" href="static/images/favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/project.css" />
+        <script src="scripts/main.js" defer></script>
+        <script src="scripts/project.js" defer></script>
+    </head>
+    <body>
+        <div class="project-container">
+            <div class="title-container">
+                <h1>Strength Quest</h1>
             </div>
-            <div class="screenshots-row">
-                <img id="screenshot" src="resources/strengh-quest_02.png" alt="">
-                <img id="screenshot" src="resources/strengh-quest_03.png" alt="">
+            
+            <div class="screenshots-grid">
+                <img src="static/images/projects/Strength Quest/Screenshot_00.png" id="screenshot" alt="Game screenshot">
+                <img src="static/images/projects/Strength Quest/Screenshot_01.png" id="screenshot" alt="Game screenshot">
+                <img src="static/images/projects/Strength Quest/Screenshot_02.png" id="screenshot" alt="Game screenshot">
+                <img src="static/images/projects/Strength Quest/Screenshot_03.png" id="screenshot" alt="Game screenshot">
             </div>
-        </div>
 
-        <div class="game-description">
-            <h3>
-                <span>Strength Quest</span> is a small <span>roguelite card game</span> made for the <a href="https://itch.io/jam/blackthornprod-game-jam-3" target="_blank">BlackThordProd Game Jam #3</a>.
+            <p class="project-description">
+                <highlight>Strength Quest</highlight> is a small <highlight>roguelite card game</highlight> made for the <a href="https://itch.io/jam/blackthornprod-game-jam-3" target="_blank">BlackThordProd Game Jam #3</a>.
                 <br>
-                The theme was <span>less is more</span>. I've always wanted to make and card game and it was the perfect time to do it.
-                <br>
-                To fit the theme I've implemented a <span>strength multiplier</span> : the <span>more health</span> you have the <span>less damage</span> you deal.
-                <br>
-                You have to find the <span>right balance</span> between health and damage, <span>don't be to greedy !</span>
+                The theme was <highlight>less is more</highlight>. I've always wanted to make and card game and it was the perfect time to do it.
                 <br>
                 <br>
-                My entry to the game jam was placed <span> 2th</span> in the <span>Theme Category</span> !
-            </h3>
-        </div>
+                To fit the theme I've implemented a <highlight>strength multiplier</highlight>: the <highlight>more health</highlight> you have the <highlight>less damage</highlight> you deal.
+                <br>
+                You have to find the <highlight>right balance</highlight> between health and damage, don't be to greedy !
+                <br>
+                <br>
+                My entry to the game jam was placed <highlight>2th</highlight> in the <highlight>Theme Category</highlight>! 
+            </p>
 
-        <div class="game-info">
-            <div class="info-container">
-                <h2 class="info-first">Game Status:</h2>
-                <div class="second-container">
-                    <h2 class="info-second info-green">Released (version 1.0)</h2>
+            <div class="project-stats">
+                <div class="project-stat-row">
+                    <h3 class="stat-title">Project Status:</h3>
+                    <h3 class="stat-subtitle green">Released</h3>
+                </div>
+                <div class="stat-separator"></div>
+                <div class="project-stat-row">
+                    <h3 class="stat-title">Technology:</h3>
+                    <h3 class="stat-subtitle gray">Unity 2019.4.13f1</h3>
+                </div>
+                <div class="stat-separator"></div>
+                <div class="project-stat-row">
+                    <h3 class="stat-title">Release Date:</h3>
+                    <h3 class="stat-subtitle gray">29th January 2021</h3>
                 </div>
             </div>
 
-            <div class="info-container">
-                <h2 class="info-first">Game Engine:</h2>
-                <div class="second-container">
-                    <h2 class="info-second">Unity 2019.4.13f1</h2>
-                </div>
-            </div>
-
-            <div class="info-container">
-                <h2 class="info-first">Latest Update:</h2>
-                <div class="second-container">
-                    <h2 class="info-second">29th January 2021</h2>
-                </div>
+            <div class="buttons-container">
+                <a class="red" href="https://daymoniakk.itch.io/strength-quest" target="_blank">Download</a>
             </div>
         </div>
-
-        <div class="buttons-container">
-            <a href="https://daymoniakk.itch.io/strength-quest" target="_blank">Download</a>
-        </div>
-
-        <div class="specs" style="width: 400px;">
-            <div class="specs-column" style="width: 100%;">
-                <div class="specs-title-container">
-                    <h3 class="specs-title" style="color: #51ff00;">Recommended :</h3>
-                    <h3 class="specs-subtitle">(1080p max settings)</h3>
-                </div>
-
-                <div class="specs-row">
-                    <div class="specs-row-title">Operating System :</div>
-                    <div class="specs-row-content">Windows 10 64-bits</div>
-                </div>
-                <div class="specs-row">
-                    <div class="specs-row-title">Processor :</div>
-                    <div class="specs-row-content">Quad core CPU</div>
-                </div>
-                <div class="specs-row">
-                    <div class="specs-row-title">Memory :</div>
-                    <div class="specs-row-content">4 GB RAM</div>
-                </div>
-                <div class="specs-row">
-                    <div class="specs-row-title">Graphics :</div>
-                    <div class="specs-row-content">NVIDIA GeForce GT 1030 2GB</div>
-                </div>
-                <div class="specs-row">
-                    <div class="specs-row-title">Storage :</div>
-                    <div class="specs-row-content">65 MB available space</div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer style="margin-top: 50px;">
-        <span id="footer-text">DayMoniakk Games</span>
-    </footer>
-</body>
+    </body>
 </html>

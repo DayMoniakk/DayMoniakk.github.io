@@ -1,95 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VtubeLighting</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/project.css">
-    <link rel="stylesheet" href="styles/navbar.css">
-    <link rel="stylesheet" href="styles/lightbox.css">
-    <link rel="shortcut icon" href="resources/favicon.png" type="image/x-icon">
-
-    <script src="scripts/navbar.js" defer></script>
-    <script src="scripts/footer.js" defer></script>
-    <script src="scripts/lightbox.js" defer></script>
-</head>
-<body>
-    <div class="navbar">
-        <img src="resources/logo.png" alt="the logo of DayMoniakk Games" class="nav-logo" id="nav-logo">
-        <div class="nav-buttons" id="nav-buttons">
-            <span class="nav-btn" id="btn-about">ABOUT</span>
-            <span class="nav-btn" id="btn-games">PROJECTS</span>
-            <span class="nav-btn" id="btn-links">LINKS</span>
-            <div class="nav-separator"></div>
-            <a class="fa-brands fa-youtube fa-xl nav-icon" href="https://www.youtube.com/channel/UC7KPd_xFKEPD5bhVng0c2Ng" target="_blank"></a>
-            <a class="fa-brands fa-twitter fa-xl nav-icon" href="https://twitter.com/daymoniakk" target="_blank"></a>
-            <a class="fa-brands fa-twitch fa-xl nav-icon" href="https://www.twitch.tv/daymoniakk" target="_blank"></a>
-            <a class="fa-brands fa-itch-io fa-xl nav-icon" href="https://daymoniakk.itch.io" target="_blank"></a>
-        </div>
-        <i class="fa-solid fa-bars fa-2xl" id="nav-hamburger"></i>
-    </div>
-
-    <main class="container">
-        <div class="title-container">
-            <h1 class="title">VtubeLighting</h1>
-        </div>
-        <div class="screenshots-container">
-            <div class="screenshots-row">
-                <img id="screenshot" src="resources/VtubeLighting_00.png" alt="">
-                <img id="screenshot" src="resources/VtubeLighting_01.png" alt="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DayMoniakk Games - VtubeLighting</title>
+        <link rel="shortcut icon" href="static/images/favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/project.css" />
+        <script src="scripts/main.js" defer></script>
+        <script src="scripts/project.js" defer></script>
+    </head>
+    <body>
+        <div class="project-container">
+            <div class="title-container">
+                <h1>VtubeLighting</h1>
             </div>
-            <div class="screenshots-row">
-                <img id="screenshot" src="resources/VtubeLighting_02.png" alt="">
-                <img id="screenshot" src="resources/VtubeLighting_03.png" alt="">
+            
+            <div class="screenshots-grid">
+                <img src="static/images/projects/VtubeLighting/Screenshot_00.png" id="screenshot" alt="Software screenshot">
+                <img src="static/images/projects/VtubeLighting/Screenshot_01.png" id="screenshot" alt="Software screenshot">
+                <img src="static/images/projects/VtubeLighting/Screenshot_02.png" id="screenshot" alt="Software screenshot">
+                <img src="static/images/projects/VtubeLighting/Screenshot_03.png" id="screenshot" alt="Software screenshot">
             </div>
-        </div>
 
-        <div class="game-description">
-            <h3>
-                This is a <span>Vtubing application</span> made to project lighting information from OBS onto your Vtuber avatar.
+            <p class="project-description">
+                This is a <Highlight>Vtubing application</Highlight> made to project lighting information from OBS onto your Vtuber avatar.
                 <br>
-                <br> 
+                <br>
                 Features :
                 <br>
-                ● <span>Lightweight</span> (around 5% CPU usage on my Ryzen 5 3600 and less than 200MB of ram usage)
+                ● <Highlight>Lightweight</Highlight> (around 5% CPU usage on my Ryzen 5 3600 and less than 200MB of ram usage)
                 <br>
                 ● No distracting yellow borders around the window
                 <br>
                 ● The user interface is invisible in your streaming software
                 <br>
-                ● 100% <span>Open Source</span> & 100% Free, FOREVER
+                ● 100% <highlight>Open Source</highlight> & 100% Free, FOREVER
                 <br>
-                ● Can be easily translated (look at VtubeLighting_Data\Resources\Translations)
-            </h3>
-        </div>
+                ● Can be easily translated (look at VtubeLighting_Data\Resources\Translations) 
+            </p>
 
-        <div class="game-info">
-            <div class="info-container">
-                <h2 class="info-first">App Status:</h2>
-                <div class="second-container">
-                    <h2 class="info-second info-green">Released (Early Access)</h2>
+            <div class="project-stats">
+                <div class="project-stat-row">
+                    <h3 class="stat-title">Project Status:</h3>
+                    <h3 class="stat-subtitle orange">Abandoned (version EA_1.2.0)</h3>
+                </div>
+                <div class="stat-separator"></div>
+                <div class="project-stat-row">
+                    <h3 class="stat-title">Technology:</h3>
+                    <h3 class="stat-subtitle gray">Unity 2022.3.4f1</h3>
+                </div>
+                <div class="stat-separator"></div>
+                <div class="project-stat-row">
+                    <h3 class="stat-title">Release Date:</h3>
+                    <h3 class="stat-subtitle gray">14th July 2023</h3>
                 </div>
             </div>
 
-            <div class="info-container">
-                <h2 class="info-first">Technology:</h2>
-                <div class="second-container">
-                    <h2 class="info-second">Unity 2022.3.4f1</h2>
-                </div>
+            <div class="buttons-container">
+                <a class="red" href="https://github.com/DayMoniakk/VtubeLighting" target="_blank">Source Code / Download</a>
             </div>
         </div>
-
-        <div class="buttons-container">
-            <a href="https://github.com/DayMoniakk/VtubeLighting" target="_blank">More Informations</a>
-        </div>
-    </main>
-
-    <footer style="margin-top: 50px;">
-        <span id="footer-text">DayMoniakk Games</span>
-    </footer>
-</body>
+    </body>
 </html>
