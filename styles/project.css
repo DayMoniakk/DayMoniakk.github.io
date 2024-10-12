@@ -64,8 +64,8 @@
 
 .project-lightbox img {
     border-radius: 5px;
-    width: 100%;
     max-width: 70vw;
+    max-height: 70vh;
 }
 
 .project-lightbox span {
